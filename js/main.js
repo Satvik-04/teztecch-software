@@ -282,6 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------
     const transitionOverlay = document.createElement('div');
     transitionOverlay.className = 'page-transition-overlay';
+    transitionOverlay.innerHTML = '<div class="transition-logo">TezTecch</div>';
     document.body.appendChild(transitionOverlay);
 
     // Fade out overlay on load
