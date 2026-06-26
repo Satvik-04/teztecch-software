@@ -304,4 +304,40 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+    // ---------------------------------------------------------
+    // 11. Hero Mouse Parallax Effect
+    // ---------------------------------------------------------
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+        const floatCRM = heroSection.querySelector('.float-crm');
+        const floatDashboard = heroSection.querySelector('.float-dashboard');
+        const floatGeos = heroSection.querySelectorAll('.float-geo');
+
+        heroSection.addEventListener('mousemove', (e) => {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const mouseX = e.clientX - (width / 2);
+            const mouseY = e.clientY - (height / 2);
+
+            // Apply different parallax speeds to layers for a real depth field
+            if (floatCRM) {
+                floatCRM.style.transform = `translate3d(${mouseX * 0.03}px, ${mouseY * 0.03}px, 0px) rotate(1deg)`;
+            }
+            if (floatDashboard) {
+                floatDashboard.style.transform = `translate3d(${mouseX * -0.02}px, ${mouseY * -0.02}px, 0px) rotate(-1deg)`;
+            }
+            floatGeos.forEach((geo, index) => {
+                const speed = (index + 1) * 0.04;
+                geo.style.transform = `translate3d(${mouseX * speed}px, ${mouseY * speed}px, 0px)`;
+            });
+        });
+
+        heroSection.addEventListener('mouseleave', () => {
+            if (floatCRM) floatCRM.style.transform = '';
+            if (floatDashboard) floatDashboard.style.transform = '';
+            floatGeos.forEach(geo => geo.style.transform = '');
+        });
+    }
 });
+
