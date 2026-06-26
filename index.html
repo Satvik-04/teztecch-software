@@ -38,31 +38,52 @@
 
     <main class="page-content" style="padding-top: 0;">
         <!-- 1. Hero Section -->
-        <section class="hero-section aurora-mesh" style="position: relative; overflow: hidden; padding: 12rem 0 10rem; min-height: 100vh; display: flex; align-items: center; color: white;">
+        <section class="hero-section aurora-mesh" style="position: relative; overflow: hidden; padding: 13rem 0 11rem; min-height: 100vh; display: flex; align-items: center; color: white;">
             <!-- Canvas Particle Network Overlay -->
             <canvas id="hero-canvas" style="position: absolute; top:0; left:0; width:100%; height:100%; pointer-events: none; z-index: 2;"></canvas>
             
             <!-- Noise texture for premium look -->
             <div class="noise-overlay"></div>
             
-            <div class="container" style="position: relative; z-index: 10; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 4rem; align-items: center;">
+            <div class="container" style="position: relative; z-index: 10; display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 4rem; align-items: center;">
                 <div>
+                    <span data-reveal class="reveal-fade-up badge">Pioneering Next-Gen Tech</span>
                     <h1 data-reveal class="reveal-rotate-in" style="font-size: clamp(3rem, 5vw + 1rem, 5.5rem); color: var(--clr-white); margin-bottom: 1.5rem; line-height: 1.1;">
                         Elevating Digital <br> <span style="color: var(--clr-accent);">Experiences</span>
                     </h1>
-                    <p data-reveal class="reveal-fade-up" style="font-size: 1.25rem; margin-bottom: 2.5rem; color: rgba(255,255,255,0.85); max-width: 600px;">
+                    <p data-reveal class="reveal-fade-up" style="font-size: 1.25rem; margin-bottom: 2.5rem; color: rgba(255,255,255,0.85); max-width: 600px; line-height: 1.6;">
                         We craft premium software solutions and dynamic web applications that empower enterprises to lead in the digital era.
                     </p>
-                    <div data-reveal class="reveal-scale-in" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div data-reveal class="reveal-scale-in" style="display: flex; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 3rem;">
                         <a href="contact.html" class="btn btn-accent btn-shine-sweep btn-glow-accent">Get Started</a>
                         <a href="services.html" class="btn btn-glass btn-shine-sweep" style="color: white; border-color: rgba(255,255,255,0.25);">Our Services</a>
+                    </div>
+                    
+                    <!-- Trust Indicators inside Hero -->
+                    <div data-reveal class="reveal-fade-up" style="display: flex; gap: 2rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; flex-wrap: wrap;">
+                        <div>
+                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-accent);">150+</div>
+                            <div style="font-size: 0.8rem; color: rgba(255,255,255,0.6); text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Shipped Apps</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-accent);">99%</div>
+                            <div style="font-size: 0.8rem; color: rgba(255,255,255,0.6); text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Success Rate</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--clr-accent);">100%</div>
+                            <div style="font-size: 0.8rem; color: rgba(255,255,255,0.6); text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Source Ownership</div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Floating Visual Dashboard mockups -->
-                <div class="desktop-only" style="position: relative; height: 400px; display: flex; align-items: center; justify-content: center;">
+                <div class="desktop-only" style="position: relative; height: 420px; display: flex; align-items: center; justify-content: center;">
+                    <!-- KPI tags for multi-layer depth -->
+                    <div class="kpi-tag" style="top: 15%; left: -60px;"><span style="color: #22c55e;">●</span> 99.9% Uptime</div>
+                    <div class="kpi-tag" style="bottom: 15%; right: -40px;"><span style="color: var(--clr-accent);">★</span> ISO 9001</div>
+
                     <!-- CRM Panel -->
-                    <div class="card-glass float-crm" style="position: absolute; width: 280px; height: 180px; top: 0; left: -20px; background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15); z-index: 5; border-radius: var(--radius-md); padding: 1.25rem; box-shadow: var(--shadow-medium);">
+                    <div class="card-glass float-crm" style="position: absolute; width: 290px; height: 185px; top: 0; left: -20px; background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15); z-index: 5; border-radius: var(--radius-md); padding: 1.25rem; box-shadow: var(--shadow-medium);">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                             <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--clr-accent); font-weight: 600;">CRM Analytics</span>
                             <span style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Active</span>
@@ -75,7 +96,7 @@
                     </div>
 
                     <!-- ERP Dashboard Card -->
-                    <div class="card-glass float-dashboard" style="position: absolute; width: 300px; height: 200px; bottom: 0; right: -30px; background: rgba(4, 47, 26, 0.4); border-color: rgba(10, 79, 46, 0.3); z-index: 4; border-radius: var(--radius-md); padding: 1.25rem; box-shadow: var(--shadow-medium);">
+                    <div class="card-glass float-dashboard" style="position: absolute; width: 310px; height: 210px; bottom: 0; right: -30px; background: rgba(4, 47, 26, 0.4); border-color: rgba(10, 79, 46, 0.3); z-index: 4; border-radius: var(--radius-md); padding: 1.25rem; box-shadow: var(--shadow-medium);">
                         <div style="font-family: var(--font-heading); font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--clr-white);">ERP Pipeline</div>
                         <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                             <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: rgba(255,255,255,0.7);">
@@ -103,17 +124,22 @@
         </section>
 
         <!-- 2. About Preview -->
-        <section class="section" style="position: relative; overflow: hidden;">
+        <section class="section" style="position: relative; overflow: hidden; padding: 7rem 0;">
             <div class="container">
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
-                    <div data-reveal class="reveal-fade-left">
+                    <div data-reveal class="reveal-fade-left" style="position: relative;">
+                        <!-- Overlapping KPI highlights to break layout flat grid -->
+                        <div class="kpi-tag" style="top: 15px; right: -15px;"><span style="color: var(--clr-accent);">✔</span> M.Tech Leadership</div>
+                        <div class="kpi-tag" style="bottom: 20px; left: -15px;"><span style="color: #22c55e;">✦</span> Nagpur HQ</div>
+
                         <div class="card-glass about-card" style="aspect-ratio: 4/3; background: linear-gradient(45deg, var(--clr-primary-light), var(--clr-primary)); border-radius: 2rem; position: relative; overflow: hidden; box-shadow: var(--shadow-medium);">
                             <div style="position: absolute; inset: -20%; background: radial-gradient(circle, var(--clr-accent-light) 0%, transparent 60%); opacity: 0.15;"></div>
                             <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.25); font-size: 6rem; font-weight: 300;">✧</div>
                         </div>
                     </div>
                     <div data-reveal class="reveal-fade-right">
-                        <h2 style="margin-bottom: 1.5rem; font-size: clamp(2rem, 3vw, 2.5rem);">We don't just build software.<br><span style="color: var(--clr-accent);">We build businesses.</span></h2>
+                        <span class="badge badge-primary">Strategic Partner</span>
+                        <h2 style="margin-bottom: 1.5rem; font-size: clamp(2rem, 3vw, 2.5rem); line-height: 1.2;">We don't just build software.<br><span style="color: var(--clr-accent);">We build businesses.</span></h2>
                         <p style="margin-bottom: 1rem; color: var(--clr-text-muted); font-size: 1.1rem;">
                             At TezTecch, we blend cutting-edge technology with world-class design to deliver products that not only look premium but perform flawlessly at scale.
                         </p>
@@ -127,88 +153,111 @@
         </section>
 
         <!-- 3. Services -->
-        <section class="section" style="background-color: var(--clr-primary-dark); color: white; position: relative; overflow: hidden;">
+        <section class="section" style="background-color: var(--clr-primary-dark); color: white; position: relative; overflow: hidden; padding: 7rem 0;">
             <div class="noise-overlay"></div>
             <div class="container" style="position: relative; z-index: 2;">
                 <div style="text-align: center; margin-bottom: 4rem;" data-reveal class="reveal-blur-in">
+                    <span class="badge">Capabilities</span>
                     <h2 style="color: white; font-size: 2.5rem;">Our Core <span style="color: var(--clr-accent);">Services</span></h2>
                     <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 1rem auto 0;">Comprehensive digital solutions engineered for growth and resilience.</p>
                 </div>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;" data-reveal-group>
-                    <div class="card-glass service-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08);" data-reveal class="reveal-scale-in">
+                    <div class="card-glass service-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
                         <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--clr-accent);">💻</div>
                         <h3 style="color: white; margin-bottom: 1rem; font-size: 1.25rem;">Web Development</h3>
-                        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem;">Scalable, high-performance web applications built on modern frameworks.</p>
+                        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-bottom: 1.5rem;">Scalable, high-performance web applications built on modern frameworks.</p>
+                        <div style="margin-top: auto;">
+                            <span class="tech-chip">React</span>
+                            <span class="tech-chip">Node.js</span>
+                            <span class="tech-chip">PHP</span>
+                        </div>
                     </div>
-                    <div class="card-glass service-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08);" data-reveal class="reveal-scale-in">
+                    <div class="card-glass service-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
                         <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--clr-accent);">📱</div>
                         <h3 style="color: white; margin-bottom: 1rem; font-size: 1.25rem;">Mobile Apps</h3>
-                        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem;">Native and cross-platform applications delivering seamless mobile experiences.</p>
+                        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-bottom: 1.5rem;">Native and cross-platform applications delivering seamless mobile experiences.</p>
+                        <div style="margin-top: auto;">
+                            <span class="tech-chip">Kotlin</span>
+                            <span class="tech-chip">Swift</span>
+                            <span class="tech-chip">Flutter</span>
+                        </div>
                     </div>
-                    <div class="card-glass service-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08);" data-reveal class="reveal-scale-in">
+                    <div class="card-glass service-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
                         <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--clr-accent);">🎨</div>
                         <h3 style="color: white; margin-bottom: 1rem; font-size: 1.25rem;">UI/UX Design</h3>
-                        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem;">Intuitive, beautiful interfaces designed with the user journey at the core.</p>
+                        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-bottom: 1.5rem;">Intuitive, beautiful interfaces designed with the user journey at the core.</p>
+                        <div style="margin-top: auto;">
+                            <span class="tech-chip">Figma</span>
+                            <span class="tech-chip">Prototyping</span>
+                            <span class="tech-chip">Research</span>
+                        </div>
                     </div>
-                    <div class="card-glass service-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08);" data-reveal class="reveal-scale-in">
+                    <div class="card-glass service-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
                         <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--clr-accent);">🚀</div>
                         <h3 style="color: white; margin-bottom: 1rem; font-size: 1.25rem;">Digital Marketing</h3>
-                        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem;">Data-driven strategies to amplify your reach and dominate your market.</p>
+                        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-bottom: 1.5rem;">Data-driven strategies to amplify your reach and dominate your market.</p>
+                        <div style="margin-top: auto;">
+                            <span class="tech-chip">SEO</span>
+                            <span class="tech-chip">Analytics</span>
+                            <span class="tech-chip">Campaigns</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 4. Why Choose Us -->
-        <section class="section">
+        <section class="section" style="padding: 7rem 0;">
             <div class="container">
                 <div style="text-align: center; margin-bottom: 4rem;" data-reveal class="reveal-blur-in">
-                    <h2 style="font-size: 2.5rem;">Why Partner With <span style="color: var(--clr-primary-light);">TezTecch?</span></h2>
+                    <span class="badge badge-primary">Why Choose Us</span>
+                    <h2 style="font-size: 2.5rem;">Why Partner With <span class="text-primary">TezTecch?</span></h2>
                 </div>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;" data-reveal-group>
-                    <div style="text-align: center;" data-reveal class="reveal-fade-up">
-                        <div style="width: 80px; height: 80px; background: var(--clr-surface); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: var(--shadow-medium); font-size: 2rem;">🏆</div>
+                    <div class="card hover-lift about-card" style="text-align: center; padding: 2.5rem var(--spacing-md); background: var(--clr-surface); border-radius: var(--radius-md);" data-reveal class="reveal-fade-up">
+                        <div style="width: 80px; height: 80px; background: #f8fafc; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: var(--shadow-soft); font-size: 2rem;">🏆</div>
                         <h4 style="margin-bottom: 0.5rem; color: var(--clr-primary); font-size: 1.2rem;">Award-Winning Quality</h4>
-                        <p style="color: var(--clr-text-muted);">We consistently deliver excellence that exceeds industry standards.</p>
+                        <p style="color: var(--clr-text-muted); font-size: 0.95rem;">We consistently deliver excellence that exceeds industry standards.</p>
                     </div>
-                    <div style="text-align: center;" data-reveal class="reveal-fade-up">
-                        <div style="width: 80px; height: 80px; background: var(--clr-surface); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: var(--shadow-medium); font-size: 2rem;">⚡</div>
+                    <div class="card hover-lift about-card" style="text-align: center; padding: 2.5rem var(--spacing-md); background: var(--clr-surface); border-radius: var(--radius-md);" data-reveal class="reveal-fade-up">
+                        <div style="width: 80px; height: 80px; background: #f8fafc; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: var(--shadow-soft); font-size: 2rem;">⚡</div>
                         <h4 style="margin-bottom: 0.5rem; color: var(--clr-primary); font-size: 1.2rem;">Agile Delivery</h4>
-                        <p style="color: var(--clr-text-muted);">Rapid prototyping and iterative development for faster time-to-market.</p>
+                        <p style="color: var(--clr-text-muted); font-size: 0.95rem;">Rapid prototyping and iterative development for faster time-to-market.</p>
                     </div>
-                    <div style="text-align: center;" data-reveal class="reveal-fade-up">
-                        <div style="width: 80px; height: 80px; background: var(--clr-surface); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: var(--shadow-medium); font-size: 2rem;">🔒</div>
+                    <div class="card hover-lift about-card" style="text-align: center; padding: 2.5rem var(--spacing-md); background: var(--clr-surface); border-radius: var(--radius-md);" data-reveal class="reveal-fade-up">
+                        <div style="width: 80px; height: 80px; background: #f8fafc; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: var(--shadow-soft); font-size: 2rem;">🔒</div>
                         <h4 style="margin-bottom: 0.5rem; color: var(--clr-primary); font-size: 1.2rem;">Enterprise Security</h4>
-                        <p style="color: var(--clr-text-muted);">Bank-grade security protocols built into every layer of our applications.</p>
+                        <p style="color: var(--clr-text-muted); font-size: 0.95rem;">Bank-grade security protocols built into every layer of our applications.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 5. Development Process -->
-        <section class="section" style="background-color: #f1f5f9; position: relative;">
+        <section class="section" style="background-color: #f1f5f9; padding: 7rem 0; position: relative;">
             <div class="container">
                 <div style="text-align: center; margin-bottom: 4rem;" data-reveal class="reveal-blur-in">
-                    <h2 style="font-size: 2.5rem;">Our Proven <span style="color: var(--clr-accent);">Process</span></h2>
+                    <span class="badge badge-primary">Methodology</span>
+                    <h2 style="font-size: 2.5rem;">Our Proven <span class="text-accent">Process</span></h2>
                 </div>
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;" data-reveal-group>
-                    <div class="card hover-lift" style="flex: 1; min-width: 220px; text-align: center; background: var(--clr-surface); border-radius: var(--radius-md); padding: var(--spacing-lg) var(--spacing-md);" data-reveal class="reveal-fade-up">
+                    <div class="card hover-lift about-card" style="flex: 1; min-width: 220px; text-align: center; background: var(--clr-surface); border-radius: var(--radius-md); padding: var(--spacing-lg) var(--spacing-md);" data-reveal class="reveal-fade-up">
                         <div style="font-family: var(--font-heading); font-size: 4rem; color: var(--clr-accent); font-weight: 700; opacity: 0.2; line-height: 1; margin-bottom: 1rem;">01</div>
                         <h4 style="margin-bottom: 0.5rem; color: var(--clr-primary);">Discovery</h4>
                         <p style="font-size: 0.9rem; color: var(--clr-text-muted);">Understanding your goals and requirements deeply.</p>
                     </div>
-                    <div class="card hover-lift" style="flex: 1; min-width: 220px; text-align: center; background: var(--clr-surface); border-radius: var(--radius-md); padding: var(--spacing-lg) var(--spacing-md);" data-reveal class="reveal-fade-up">
+                    <div class="card hover-lift about-card" style="flex: 1; min-width: 220px; text-align: center; background: var(--clr-surface); border-radius: var(--radius-md); padding: var(--spacing-lg) var(--spacing-md);" data-reveal class="reveal-fade-up">
                         <div style="font-family: var(--font-heading); font-size: 4rem; color: var(--clr-accent); font-weight: 700; opacity: 0.2; line-height: 1; margin-bottom: 1rem;">02</div>
                         <h4 style="margin-bottom: 0.5rem; color: var(--clr-primary);">Design</h4>
                         <p style="font-size: 0.9rem; color: var(--clr-text-muted);">Crafting intuitive user journeys and stunning visuals.</p>
                     </div>
-                    <div class="card hover-lift" style="flex: 1; min-width: 220px; text-align: center; background: var(--clr-surface); border-radius: var(--radius-md); padding: var(--spacing-lg) var(--spacing-md);" data-reveal class="reveal-fade-up">
+                    <div class="card hover-lift about-card" style="flex: 1; min-width: 220px; text-align: center; background: var(--clr-surface); border-radius: var(--radius-md); padding: var(--spacing-lg) var(--spacing-md);" data-reveal class="reveal-fade-up">
                         <div style="font-family: var(--font-heading); font-size: 4rem; color: var(--clr-accent); font-weight: 700; opacity: 0.2; line-height: 1; margin-bottom: 1rem;">03</div>
                         <h4 style="margin-bottom: 0.5rem; color: var(--clr-primary);">Development</h4>
                         <p style="font-size: 0.9rem; color: var(--clr-text-muted);">Building scalable, robust, and secure architectures.</p>
                     </div>
-                    <div class="card hover-lift" style="flex: 1; min-width: 220px; text-align: center; background: var(--clr-surface); border-radius: var(--radius-md); padding: var(--spacing-lg) var(--spacing-md);" data-reveal class="reveal-fade-up">
+                    <div class="card hover-lift about-card" style="flex: 1; min-width: 220px; text-align: center; background: var(--clr-surface); border-radius: var(--radius-md); padding: var(--spacing-lg) var(--spacing-md);" data-reveal class="reveal-fade-up">
                         <div style="font-family: var(--font-heading); font-size: 4rem; color: var(--clr-accent); font-weight: 700; opacity: 0.2; line-height: 1; margin-bottom: 1rem;">04</div>
                         <h4 style="margin-bottom: 0.5rem; color: var(--clr-primary);">Deployment</h4>
                         <p style="font-size: 0.9rem; color: var(--clr-text-muted);">Launching your product and providing ongoing support.</p>
@@ -218,7 +267,7 @@
         </section>
 
         <!-- 6. Statistics -->
-        <section class="section" style="background: var(--clr-primary); color: white; position: relative; overflow: hidden;">
+        <section class="section" style="background: var(--clr-primary); color: white; position: relative; overflow: hidden; padding: 7rem 0;">
             <div class="noise-overlay"></div>
             <div class="container">
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; text-align: center;" data-reveal-group>
@@ -243,9 +292,10 @@
         </section>
 
         <!-- 7. Industries -->
-        <section class="section">
+        <section class="section" style="padding: 7rem 0;">
             <div class="container" style="text-align: center;">
-                <h2 style="margin-bottom: 3rem; font-size: 2.5rem;" data-reveal class="reveal-blur-in">Industries We <span style="color: var(--clr-accent);">Empower</span></h2>
+                <span class="badge badge-primary">Impact</span>
+                <h2 style="margin-bottom: 3rem; font-size: 2.5rem;" data-reveal class="reveal-blur-in">Industries We <span class="text-primary">Empower</span></h2>
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;" data-reveal-group>
                     <div class="card-glass hover-lift" style="padding: 1rem 2rem; border-radius: var(--radius-pill); font-weight: 600;" data-reveal class="reveal-scale-in">🏥 Healthcare</div>
                     <div class="card-glass hover-lift" style="padding: 1rem 2rem; border-radius: var(--radius-pill); font-weight: 600;" data-reveal class="reveal-scale-in">💳 FinTech</div>
@@ -258,9 +308,9 @@
         </section>
 
         <!-- 8. CTA -->
-        <section class="section" style="padding-top: 0;">
+        <section class="section" style="padding-top: 0; padding-bottom: 5rem;">
             <div class="container">
-                <div class="card-glass" style="background: linear-gradient(135deg, var(--clr-primary-dark), var(--clr-primary)); color: white; text-align: center; border-radius: 2rem; padding: 5rem 2rem; border: none; box-shadow: var(--shadow-medium); position: relative; overflow: hidden;">
+                <div class="card-glass" style="background: linear-gradient(135deg, var(--clr-primary-dark), var(--clr-primary)); color: white; text-align: center; border-radius: 2rem; padding: 6rem 2rem; border: none; box-shadow: var(--shadow-medium); position: relative; overflow: hidden;">
                     <div class="noise-overlay"></div>
                     <div style="max-width: 800px; margin: 0 auto; position: relative; z-index: 10;">
                         <h2 style="color: white; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem;" data-reveal class="reveal-rotate-in">Ready to transform your business?</h2>

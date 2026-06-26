@@ -42,10 +42,11 @@
             <div class="noise-overlay"></div>
             <div class="container relative z-10 text-center">
                 <div class="max-w-900" style="margin: 0 auto;">
+                    <span data-reveal class="reveal-fade-up badge">Flagship Offerings</span>
                     <h1 data-reveal class="reveal-rotate-in text-hero mb-md text-white" style="font-size: clamp(3rem, 5vw, 4.5rem); margin-bottom: 1.5rem;">
                         Our Software <span class="text-accent">Development</span> Services
                     </h1>
-                    <p data-reveal class="reveal-fade-up text-lead text-muted-light mb-xl" style="font-size: 1.25rem; margin-bottom: 2.5rem; color: rgba(255,255,255,0.85);">
+                    <p data-reveal class="reveal-fade-up text-lead text-muted-light mb-xl" style="font-size: 1.25rem; margin-bottom: 2.5rem; color: rgba(255,255,255,0.85); max-width: 750px; margin-left: auto; margin-right: auto;">
                         End-to-end digital engineering. From scalable backends to immersive user experiences, we build solutions that accelerate business growth.
                     </p>
                     <div data-reveal class="reveal-scale-in flex-center gap-md">
@@ -59,13 +60,21 @@
 
         <div id="services">
             <!-- 2. Custom Software Development -->
-            <section class="service-row bg-light" style="padding: 6rem 0;">
+            <section class="service-row bg-light" style="padding: 7rem 0;">
                 <div class="container">
                     <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
                         <div data-reveal class="reveal-fade-left">
+                            <span class="badge badge-primary">Tailored Code</span>
                             <h2 class="text-h2 mb-sm" style="font-size: 2.25rem; margin-bottom: 1rem;">Custom Software <span class="text-accent">Development</span></h2>
                             <p class="text-lead text-muted mb-md" style="color: var(--clr-text-muted); margin-bottom: 1.5rem;">We build business-specific software tailored precisely to your operational needs. Whether it’s a bespoke internal tool or a full-scale platform, we engineer scalable architectures that grow with you.</p>
                             
+                            <div style="margin-bottom: 1.5rem;">
+                                <span class="tech-chip tech-chip-dark">Java</span>
+                                <span class="tech-chip tech-chip-dark">Go</span>
+                                <span class="tech-chip tech-chip-dark">Python</span>
+                                <span class="tech-chip tech-chip-dark">AWS</span>
+                            </div>
+
                             <ul class="feature-list" style="margin-bottom: 1.5rem;">
                                 <li>Business-specific software</li>
                                 <li>Custom dashboards</li>
@@ -80,7 +89,9 @@
                             
                             <a href="contact.html" class="btn btn-primary btn-shine-sweep btn-glow-primary">Start Your Project</a>
                         </div>
-                        <div data-reveal class="reveal-fade-right">
+                        <div data-reveal class="reveal-fade-right" style="position: relative;">
+                            <!-- Floating Metric Glare overlay to enrich section -->
+                            <div class="kpi-tag" style="top: 20px; left: -20px;"><span style="color: #22c55e;">●</span> Custom-Coded</div>
                             <div class="service-img-wrapper service-card" style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--clr-primary-light), var(--clr-primary)); border-radius: 2rem; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-medium);">
                                 <div class="text-white opacity-20 font-size-6rem" style="font-size: 6rem; color: rgba(255,255,255,0.25);">💻</div>
                             </div>
@@ -90,13 +101,21 @@
             </section>
 
             <!-- 3. ERP Solutions -->
-            <section class="service-row bg-surface" style="padding: 6rem 0; background-color: #f8fafc;">
+            <section class="service-row bg-surface" style="padding: 7rem 0; background-color: #f8fafc;">
                 <div class="container">
                     <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
-                        <div data-reveal class="reveal-fade-left">
+                        <!-- Controlled Asymmetry: Left Heavy text layout alternating alignment -->
+                        <div data-reveal class="reveal-fade-right">
+                            <span class="badge badge-primary">Unified Database</span>
                             <h2 class="text-h2 mb-sm" style="font-size: 2.25rem; margin-bottom: 1rem;">Enterprise Resource <span class="text-accent">Planning</span></h2>
                             <p class="text-lead text-muted mb-md" style="color: var(--clr-text-muted); margin-bottom: 1.5rem;">Centralize your business data. Our custom ERP solutions unify your departments into a single, cohesive, real-time dashboard.</p>
                             
+                            <div style="margin-bottom: 1.5rem;">
+                                <span class="tech-chip tech-chip-dark">ERPnext</span>
+                                <span class="tech-chip tech-chip-dark">Odoo integration</span>
+                                <span class="tech-chip tech-chip-dark">PostgreSQL</span>
+                            </div>
+
                             <ul class="feature-list" style="margin-bottom: 1.5rem;">
                                 <li>Inventory Management</li>
                                 <li>Billing & Invoicing</li>
@@ -112,7 +131,8 @@
                             
                             <a href="contact.html" class="btn btn-primary btn-shine-sweep btn-glow-primary">Upgrade Your ERP</a>
                         </div>
-                        <div data-reveal class="reveal-fade-right">
+                        <div data-reveal class="reveal-fade-left" style="position: relative;">
+                            <div class="kpi-tag" style="bottom: 20px; right: -20px;"><span style="color: var(--clr-accent);">★</span> RealtimeSync</div>
                             <div class="service-img-wrapper service-card" style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--clr-accent), var(--clr-primary)); border-radius: 2rem; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-medium);">
                                 <div class="text-white opacity-20 font-size-6rem" style="font-size: 6rem; color: rgba(255,255,255,0.25);">📊</div>
                             </div>
@@ -122,13 +142,20 @@
             </section>
 
             <!-- 4. CRM Solutions -->
-            <section class="service-row bg-light" style="padding: 6rem 0;">
+            <section class="service-row bg-light" style="padding: 7rem 0;">
                 <div class="container">
                     <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
                         <div data-reveal class="reveal-fade-left">
+                            <span class="badge badge-primary">Lead Acceleration</span>
                             <h2 class="text-h2 mb-sm" style="font-size: 2.25rem; margin-bottom: 1rem;">Intelligent <span class="text-accent">CRM</span> Solutions</h2>
                             <p class="text-lead text-muted mb-md" style="color: var(--clr-text-muted); margin-bottom: 1.5rem;">Transform how you interact with your clients. We build powerful CRM systems designed to accelerate your sales pipeline and maximize retention.</p>
                             
+                            <div style="margin-bottom: 1.5rem;">
+                                <span class="tech-chip tech-chip-dark">Pipeline API</span>
+                                <span class="tech-chip tech-chip-dark">Twilio SMS</span>
+                                <span class="tech-chip tech-chip-dark">SendGrid</span>
+                            </div>
+
                             <ul class="feature-list" style="margin-bottom: 1.5rem;">
                                 <li>Lead Tracking</li>
                                 <li>Sales Pipeline Management</li>
@@ -144,7 +171,8 @@
                             
                             <a href="contact.html" class="btn btn-primary btn-shine-sweep btn-glow-primary">Boost Your Sales</a>
                         </div>
-                        <div data-reveal class="reveal-fade-right">
+                        <div data-reveal class="reveal-fade-right" style="position: relative;">
+                            <div class="kpi-tag" style="top: 20px; left: -20px;"><span style="color: var(--clr-accent);">✔</span> AI Autocomplete</div>
                             <div class="service-img-wrapper service-card" style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--clr-primary-light), var(--clr-primary)); border-radius: 2rem; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-medium);">
                                 <div class="text-white opacity-20 font-size-6rem" style="font-size: 6rem; color: rgba(255,255,255,0.25);">🤝</div>
                             </div>
@@ -154,13 +182,20 @@
             </section>
 
             <!-- 5. Business Automation -->
-            <section class="service-row bg-surface" style="padding: 6rem 0; background-color: #f8fafc;">
+            <section class="service-row bg-surface" style="padding: 7rem 0; background-color: #f8fafc;">
                 <div class="container">
                     <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
-                        <div data-reveal class="reveal-fade-left">
+                        <div data-reveal class="reveal-fade-right">
+                            <span class="badge badge-primary">No Repetition</span>
                             <h2 class="text-h2 mb-sm" style="font-size: 2.25rem; margin-bottom: 1rem;">Business <span class="text-accent">Automation</span></h2>
                             <p class="text-lead text-muted mb-md" style="color: var(--clr-text-muted); margin-bottom: 1.5rem;">Replace repetitive manual tasks with intelligent software. We connect your tools and automate your workflows to drastically improve efficiency.</p>
                             
+                            <div style="margin-bottom: 1.5rem;">
+                                <span class="tech-chip tech-chip-dark">Webhooks</span>
+                                <span class="tech-chip tech-chip-dark">Zapier integration</span>
+                                <span class="tech-chip tech-chip-dark">NodeRED</span>
+                            </div>
+
                             <ul class="feature-list" style="margin-bottom: 1.5rem;">
                                 <li>Workflow Automation</li>
                                 <li>Task Management</li>
@@ -175,7 +210,8 @@
                             
                             <a href="contact.html" class="btn btn-primary btn-shine-sweep btn-glow-primary">Automate Today</a>
                         </div>
-                        <div data-reveal class="reveal-fade-right">
+                        <div data-reveal class="reveal-fade-left" style="position: relative;">
+                            <div class="kpi-tag" style="bottom: 20px; right: -20px;"><span style="color: #22c55e;">●</span> 100% Automatic</div>
                             <div class="service-img-wrapper service-card" style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--clr-primary-dark), #1a365d); border-radius: 2rem; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-medium);">
                                 <div class="text-white opacity-20 font-size-6rem" style="font-size: 6rem; color: rgba(255,255,255,0.25);">⚡</div>
                             </div>
@@ -185,13 +221,21 @@
             </section>
 
             <!-- 6. SaaS Product Development -->
-            <section class="service-row bg-light" style="padding: 6rem 0;">
+            <section class="service-row bg-light" style="padding: 7rem 0;">
                 <div class="container">
                     <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
                         <div data-reveal class="reveal-fade-left">
+                            <span class="badge badge-primary">Scale Cloud</span>
                             <h2 class="text-h2 mb-sm" style="font-size: 2.25rem; margin-bottom: 1rem;">SaaS Product <span class="text-accent">Development</span></h2>
                             <p class="text-lead text-muted mb-md" style="color: var(--clr-text-muted); margin-bottom: 1.5rem;">Bring your software vision to the cloud. We design, build, and deploy multi-tenant SaaS platforms capable of handling global traffic.</p>
                             
+                            <div style="margin-bottom: 1.5rem;">
+                                <span class="tech-chip tech-chip-dark">Docker</span>
+                                <span class="tech-chip tech-chip-dark">Kubernetes</span>
+                                <span class="tech-chip tech-chip-dark">Stripe API</span>
+                                <span class="tech-chip tech-chip-dark">Redis</span>
+                            </div>
+
                             <ul class="feature-list" style="margin-bottom: 1.5rem;">
                                 <li>Cloud Software Architecture</li>
                                 <li>Subscription Platforms</li>
@@ -206,7 +250,8 @@
                             
                             <a href="contact.html" class="btn btn-primary btn-shine-sweep btn-glow-primary">Build Your SaaS</a>
                         </div>
-                        <div data-reveal class="reveal-fade-right">
+                        <div data-reveal class="reveal-fade-right" style="position: relative;">
+                            <div class="kpi-tag" style="top: 20px; left: -20px;"><span style="color: var(--clr-accent);">✦</span> Multi-Tenant</div>
                             <div class="service-img-wrapper service-card" style="aspect-ratio: 4/3; background: linear-gradient(135deg, #2d3748, var(--clr-primary)); border-radius: 2rem; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-medium);">
                                 <div class="text-white opacity-20 font-size-6rem" style="font-size: 6rem; color: rgba(255,255,255,0.25);">☁️</div>
                             </div>
@@ -216,13 +261,20 @@
             </section>
 
             <!-- 7. Maintenance & Support -->
-            <section class="service-row bg-surface" style="padding: 6rem 0; background-color: #f8fafc;">
+            <section class="service-row bg-surface" style="padding: 7rem 0; background-color: #f8fafc;">
                 <div class="container">
                     <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
-                        <div data-reveal class="reveal-fade-left">
+                        <div data-reveal class="reveal-fade-right">
+                            <span class="badge badge-primary">24/7 Security</span>
                             <h2 class="text-h2 mb-sm" style="font-size: 2.25rem; margin-bottom: 1rem;">Maintenance & <span class="text-accent">Support</span></h2>
                             <p class="text-lead text-muted mb-md" style="color: var(--clr-text-muted); margin-bottom: 1.5rem;">Software is an evolving ecosystem. We provide continuous technical support, security patching, and feature optimization post-launch.</p>
                             
+                            <div style="margin-bottom: 1.5rem;">
+                                <span class="tech-chip tech-chip-dark">Sentry IO</span>
+                                <span class="tech-chip tech-chip-dark">CI/CD patching</span>
+                                <span class="tech-chip tech-chip-dark">SSL audit</span>
+                            </div>
+
                             <ul class="feature-list" style="margin-bottom: 1.5rem;">
                                 <li>Rapid Bug Fixing</li>
                                 <li>Performance Optimization</li>
@@ -238,7 +290,8 @@
                             
                             <a href="contact.html" class="btn btn-primary btn-shine-sweep btn-glow-primary">Get Support</a>
                         </div>
-                        <div data-reveal class="reveal-fade-right">
+                        <div data-reveal class="reveal-fade-left" style="position: relative;">
+                            <div class="kpi-tag" style="bottom: 20px; right: -20px;"><span style="color: #22c55e;">✔</span> SLA Backed</div>
                             <div class="service-img-wrapper service-card" style="aspect-ratio: 4/3; background: linear-gradient(135deg, var(--clr-primary-light), var(--clr-primary)); border-radius: 2rem; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-medium);">
                                 <div class="text-white opacity-20 font-size-6rem" style="font-size: 6rem; color: rgba(255,255,255,0.25);">🛡️</div>
                             </div>
@@ -249,10 +302,11 @@
         </div>
 
         <!-- 8. Technology Stack -->
-        <section class="section bg-primary-dark text-white relative overflow-hidden" style="background-color: var(--clr-primary-dark); padding: 5rem 0;">
+        <section class="section bg-primary-dark text-white relative overflow-hidden" style="background-color: var(--clr-primary-dark); padding: 7rem 0;">
             <div class="noise-overlay"></div>
             <div class="container relative z-10">
                 <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge">Ecosystem</span>
                     <h2 class="text-h2 text-white" style="color: white; font-size: 2.5rem;">Our Enterprise <span class="text-accent">Tech Stack</span></h2>
                     <p class="text-lead text-muted-light mt-sm" style="color: rgba(255,255,255,0.7);">We use battle-tested, modern technologies to build resilient systems.</p>
                 </div>
@@ -301,6 +355,7 @@
         <section class="section bg-light" style="background-color: #f8fafc; padding: 5rem 0;">
             <div class="container">
                 <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge badge-primary">Strategic Advantage</span>
                     <h2 class="text-h2" style="font-size: 2.5rem;">Why Choose <span class="text-accent">Teztecch</span></h2>
                 </div>
                 <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;" data-reveal-group>
@@ -324,6 +379,7 @@
         <section class="section bg-surface" style="padding: 5rem 0;">
             <div class="container">
                 <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge badge-primary">Sprints</span>
                     <h2 class="text-h2" style="font-size: 2.5rem;">Our Rapid <span class="text-accent">Deployment</span> Cycle</h2>
                 </div>
                 <div class="timeline-horizontal" data-reveal-group>
@@ -360,6 +416,7 @@
         <section class="section bg-light" style="background-color: #f8fafc; padding: 5rem 0;">
             <div class="container">
                 <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge badge-primary">Impact</span>
                     <h2 class="text-h2" style="font-size: 2.5rem;">Industries We <span class="text-accent">Empower</span></h2>
                 </div>
                 <div class="grid-4" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;" data-reveal-group>
@@ -395,6 +452,7 @@
         <section class="section bg-surface" style="padding: 5rem 0;">
             <div class="container">
                 <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge badge-primary">Q&A</span>
                     <h2 class="text-h2" style="font-size: 2.5rem;">Frequently Asked <span class="text-accent">Questions</span></h2>
                 </div>
                 <div class="faq-container" data-reveal-group>
@@ -430,7 +488,7 @@
         </section>
 
         <!-- 13. Large CTA -->
-        <section class="section pt-0">
+        <section class="section pt-0" style="padding-bottom: 5rem;">
             <div class="container">
                 <div class="card-glass text-center" style="background: linear-gradient(135deg, var(--clr-primary-dark), var(--clr-primary)); color: white; border-radius: 2rem; padding: 5rem 2rem; border: none; box-shadow: var(--shadow-medium); position: relative; overflow: hidden;">
                     <div class="noise-overlay"></div>

@@ -42,10 +42,11 @@
             <div class="noise-overlay"></div>
             <div class="container relative z-10 text-center">
                 <div class="max-w-900" style="margin: 0 auto;">
+                    <span data-reveal class="reveal-fade-up badge">Our Identity</span>
                     <h1 data-reveal class="reveal-rotate-in text-hero mb-md text-white" style="font-size: clamp(3rem, 5vw, 4.5rem); margin-bottom: 1.5rem;">
                         About <span class="text-accent">Teztecch</span> Software Development
                     </h1>
-                    <p data-reveal class="reveal-fade-up text-lead text-muted-light mb-xl" style="font-size: 1.25rem; margin-bottom: 2.5rem; color: rgba(255,255,255,0.85);">
+                    <p data-reveal class="reveal-fade-up text-lead text-muted-light mb-xl" style="font-size: 1.25rem; margin-bottom: 2.5rem; color: rgba(255,255,255,0.85); max-width: 700px; margin-left: auto; margin-right: auto;">
                         Pioneering the future of enterprise software by merging unparalleled technical expertise with world-class design thinking.
                     </p>
                     <div data-reveal class="reveal-scale-in flex-center gap-md">
@@ -58,15 +59,20 @@
         </section>
 
         <!-- 2. Company Story -->
-        <section id="story" class="section">
+        <section id="story" class="section" style="padding: 7rem 0;">
             <div class="container">
                 <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
-                    <div data-reveal class="reveal-fade-left">
+                    <div data-reveal class="reveal-fade-left" style="position: relative;">
+                        <!-- Absolute Tag to enrich layout -->
+                        <div class="kpi-tag" style="top: 20px; right: -10px;"><span style="color: var(--clr-accent);">★</span> Integrity First</div>
+                        <div class="kpi-tag" style="bottom: 20px; left: -10px;"><span style="color: #22c55e;">✦</span> Nagpur, MH</div>
+
                         <div class="about-illustration flex-center about-card" style="aspect-ratio: 4/3; background: linear-gradient(45deg, var(--clr-primary-light), var(--clr-primary)); border-radius: 2rem; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-medium);">
                             <div class="text-white opacity-20 font-size-6rem" style="font-size: 6rem; color: rgba(255,255,255,0.25);">✧</div>
                         </div>
                     </div>
                     <div data-reveal class="reveal-fade-right">
+                        <span class="badge badge-primary">Who We Are</span>
                         <h2 class="text-h2 mb-md" style="margin-bottom: 1.5rem; font-size: clamp(2rem, 3vw, 2.5rem);">Engineering Excellence, <br><span class="text-accent">Delivering Success.</span></h2>
                         <p class="text-lead text-muted mb-md" style="margin-bottom: 1rem; color: var(--clr-text-muted);">
                             Founded with a vision to bridge the gap between complex business challenges and elegant technological solutions, Teztecch is more than a software vendor — we are your strategic digital partner.
@@ -80,19 +86,25 @@
         </section>
 
         <!-- 3. Mission & Vision -->
-        <section class="section bg-primary-dark text-white relative overflow-hidden" style="background-color: var(--clr-primary-dark); padding: 5rem 0;">
+        <section class="section bg-primary-dark text-white relative overflow-hidden" style="background-color: var(--clr-primary-dark); padding: 7rem 0;">
             <div class="noise-overlay"></div>
             <div class="container relative z-10">
                 <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;" data-reveal-group>
                     <div class="card-glass hover-lift about-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
-                        <div class="icon-box mb-md" style="font-size: 2.5rem; margin-bottom: 1rem;">🎯</div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <div class="icon-box">🎯</div>
+                            <span class="badge">Scale Target</span>
+                        </div>
                         <h3 class="text-h3 text-white mb-sm" style="color: white; margin-bottom: 0.75rem;">Our Mission</h3>
                         <p class="text-muted-light text-lead" style="color: rgba(255,255,255,0.7); font-size: 1.05rem;">
                             To empower enterprises worldwide by delivering robust, scalable, and beautifully designed software that solves real-world problems and accelerates digital transformation.
                         </p>
                     </div>
                     <div class="card-glass hover-lift about-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
-                        <div class="icon-box mb-md" style="font-size: 2.5rem; margin-bottom: 1rem;">👁️</div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <div class="icon-box">👁️</div>
+                            <span class="badge">Global Goal</span>
+                        </div>
                         <h3 class="text-h3 text-white mb-sm" style="color: white; margin-bottom: 0.75rem;">Our Vision</h3>
                         <p class="text-muted-light text-lead" style="color: rgba(255,255,255,0.7); font-size: 1.05rem;">
                             To be the global gold standard in premium software engineering, known for our uncompromising quality, innovative approaches, and deep commitment to client success.
@@ -103,39 +115,40 @@
         </section>
 
         <!-- 4. Core Values -->
-        <section class="section bg-light" style="background-color: #f8fafc;">
+        <section class="section bg-light" style="background-color: #f8fafc; padding: 7rem 0;">
             <div class="container">
                 <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge badge-primary">Core Pillars</span>
                     <h2 class="text-h2" style="font-size: 2.5rem;">The Pillars of Our <span class="text-accent">Culture</span></h2>
                 </div>
                 <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;" data-reveal-group>
-                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;" data-reveal class="reveal-scale-in">
-                        <div class="icon-box icon-box-dark mb-md" style="font-size: 2.2rem; margin-bottom: 1rem;">💡</div>
+                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2.5rem;" data-reveal class="reveal-scale-in">
+                        <span class="badge badge-primary" style="font-size: 0.65rem;">Pillar 01</span>
                         <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Innovation</h4>
                         <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Continuously exploring the frontier of technology to bring cutting-edge solutions.</p>
                     </div>
-                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;" data-reveal class="reveal-scale-in">
-                        <div class="icon-box icon-box-dark mb-md" style="font-size: 2.2rem; margin-bottom: 1rem;">⭐</div>
+                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2.5rem;" data-reveal class="reveal-scale-in">
+                        <span class="badge badge-primary" style="font-size: 0.65rem;">Pillar 02</span>
                         <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Quality</h4>
                         <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Uncompromising standards in every pixel designed and every function written.</p>
                     </div>
-                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;" data-reveal class="reveal-scale-in">
-                        <div class="icon-box icon-box-dark mb-md" style="font-size: 2.2rem; margin-bottom: 1rem;">🤝</div>
+                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2.5rem;" data-reveal class="reveal-scale-in">
+                        <span class="badge badge-primary" style="font-size: 0.65rem;">Pillar 03</span>
                         <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Reliability</h4>
                         <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Building highly resilient architectures that businesses can confidently rely on.</p>
                     </div>
-                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;" data-reveal class="reveal-scale-in">
-                        <div class="icon-box icon-box-dark mb-md" style="font-size: 2.2rem; margin-bottom: 1rem;">🛡️</div>
+                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2.5rem;" data-reveal class="reveal-scale-in">
+                        <span class="badge badge-primary" style="font-size: 0.65rem;">Pillar 04</span>
                         <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Security</h4>
                         <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Embedding bank-grade security protocols into the core of our development lifecycle.</p>
                     </div>
-                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;" data-reveal class="reveal-scale-in">
-                        <div class="icon-box icon-box-dark mb-md" style="font-size: 2.2rem; margin-bottom: 1rem;">🔍</div>
+                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2.5rem;" data-reveal class="reveal-scale-in">
+                        <span class="badge badge-primary" style="font-size: 0.65rem;">Pillar 05</span>
                         <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Transparency</h4>
                         <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Maintaining open, honest communication throughout the entire project duration.</p>
                     </div>
-                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;" data-reveal class="reveal-scale-in">
-                        <div class="icon-box icon-box-dark mb-md" style="font-size: 2.2rem; margin-bottom: 1rem;">📈</div>
+                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2.5rem;" data-reveal class="reveal-scale-in">
+                        <span class="badge badge-primary" style="font-size: 0.65rem;">Pillar 06</span>
                         <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Customer Success</h4>
                         <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Our true measure of achievement is the measurable growth of our clients.</p>
                     </div>
@@ -144,9 +157,10 @@
         </section>
 
         <!-- 5. Development Process -->
-        <section class="section">
+        <section class="section" style="padding: 7rem 0;">
             <div class="container">
                 <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge badge-primary">Methodology</span>
                     <h2 class="text-h2" style="font-size: 2.5rem;">How We <span class="text-accent">Execute</span></h2>
                     <p class="text-lead text-muted mt-sm" style="color: var(--clr-text-muted);">Our streamlined methodology guarantees precision at every step.</p>
                 </div>
@@ -154,49 +168,56 @@
                     <div class="timeline-item" data-reveal class="reveal-fade-left">
                         <div class="timeline-dot"></div>
                         <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
-                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">1. Requirement Analysis</h4>
+                            <span class="badge badge-primary" style="font-size: 0.65rem;">Phase 1</span>
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">Requirement Analysis</h4>
                             <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Deep dive into business goals, technical constraints, and user needs to form a solid blueprint.</p>
                         </div>
                     </div>
                     <div class="timeline-item" data-reveal class="reveal-fade-right">
                         <div class="timeline-dot"></div>
                         <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
-                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">2. Planning & Architecture</h4>
+                            <span class="badge badge-primary" style="font-size: 0.65rem;">Phase 2</span>
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">Planning & Architecture</h4>
                             <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Selecting the optimal tech stack and designing scalable database schemas and system architectures.</p>
                         </div>
                     </div>
                     <div class="timeline-item" data-reveal class="reveal-fade-left">
                         <div class="timeline-dot"></div>
                         <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
-                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">3. UI/UX Design</h4>
+                            <span class="badge badge-primary" style="font-size: 0.65rem;">Phase 3</span>
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">UI/UX Design</h4>
                             <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Crafting beautiful, intuitive, and accessible interfaces backed by user experience research.</p>
                         </div>
                     </div>
                     <div class="timeline-item" data-reveal class="reveal-fade-right">
                         <div class="timeline-dot"></div>
                         <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
-                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">4. Agile Development</h4>
+                            <span class="badge badge-primary" style="font-size: 0.65rem;">Phase 4</span>
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">Agile Development</h4>
                             <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Writing clean, modular code in agile sprints, ensuring continuous delivery and tight feedback loops.</p>
                         </div>
                     </div>
                     <div class="timeline-item" data-reveal class="reveal-fade-left">
                         <div class="timeline-dot"></div>
                         <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
-                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">5. Rigorous Testing</h4>
+                            <span class="badge badge-primary" style="font-size: 0.65rem;">Phase 5</span>
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">Rigorous Testing</h4>
                             <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Automated and manual QA processes encompassing unit, integration, and performance testing.</p>
                         </div>
                     </div>
                     <div class="timeline-item" data-reveal class="reveal-fade-right">
                         <div class="timeline-dot"></div>
                         <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
-                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">6. Deployment & CI/CD</h4>
+                            <span class="badge badge-primary" style="font-size: 0.65rem;">Phase 6</span>
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">Deployment & CI/CD</h4>
                             <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Seamless rollout to production environments using advanced continuous integration pipelines.</p>
                         </div>
                     </div>
                     <div class="timeline-item" data-reveal class="reveal-fade-left">
                         <div class="timeline-dot"></div>
                         <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
-                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">7. Ongoing Maintenance</h4>
+                            <span class="badge badge-primary" style="font-size: 0.65rem;">Phase 7</span>
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">Ongoing Maintenance</h4>
                             <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Proactive monitoring, security patches, and feature enhancements to ensure longevity.</p>
                         </div>
                     </div>
@@ -205,15 +226,19 @@
         </section>
 
         <!-- 6. Why Businesses Trust Us -->
-        <section class="section bg-primary-dark text-white relative overflow-hidden" style="background-color: var(--clr-primary-dark); padding: 5rem 0;">
+        <section class="section bg-primary-dark text-white relative overflow-hidden" style="background-color: var(--clr-primary-dark); padding: 7rem 0;">
             <div class="noise-overlay"></div>
             <div class="container relative z-10">
                 <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge">Enterprise Ready</span>
                     <h2 class="text-h2 text-white" style="font-size: 2.5rem; color: white;">Why Businesses <span class="text-accent">Trust Us</span></h2>
                 </div>
                 <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;" data-reveal-group>
                     <div class="card-glass hover-lift about-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
-                        <h3 class="text-h3 text-white mb-sm" style="color: white; margin-bottom: 0.75rem;">Enterprise-Grade Architecture</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3 class="text-h3 text-white mb-sm" style="color: white; margin-bottom: 0;">Enterprise-Grade</h3>
+                            <span class="badge" style="font-size: 0.65rem;">SLA Backed</span>
+                        </div>
                         <p class="text-muted-light mb-md" style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">We don't cut corners. Our systems are built to handle millions of transactions, ensuring your business never experiences catastrophic downtime.</p>
                         <ul class="list-none" style="list-style: none;">
                             <li class="mb-xs text-accent" style="margin-bottom: 0.5rem; color: var(--clr-accent);">✓ High Availability</li>
@@ -222,7 +247,10 @@
                         </ul>
                     </div>
                     <div class="card-glass hover-lift about-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
-                        <h3 class="text-h3 text-white mb-sm" style="color: white; margin-bottom: 0.75rem;">Transparent Partnership</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3 class="text-h3 text-white mb-sm" style="color: white; margin-bottom: 0;">Transparent Partnership</h3>
+                            <span class="badge" style="font-size: 0.65rem;">Collab Active</span>
+                        </div>
                         <p class="text-muted-light mb-md" style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">We integrate directly with your team. No hidden fees, no opaque black-box development. You have full visibility into our codebase and progress.</p>
                         <ul class="list-none" style="list-style: none;">
                             <li class="mb-xs text-accent" style="margin-bottom: 0.5rem; color: var(--clr-accent);">✓ Daily Standups</li>
@@ -235,7 +263,7 @@
         </section>
 
         <!-- 7. Company Statistics -->
-        <section class="section" style="padding: 5rem 0;">
+        <section class="section" style="padding: 7rem 0;">
             <div class="container">
                 <div class="grid-4 text-center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; text-align: center;" data-reveal-group>
                     <div data-reveal class="reveal-scale-in stat-container">
@@ -259,9 +287,9 @@
         </section>
 
         <!-- 8. Final CTA -->
-        <section class="section pt-0">
+        <section class="section pt-0" style="padding-bottom: 5rem;">
             <div class="container">
-                <div class="card-glass text-center" style="background: linear-gradient(135deg, var(--clr-primary-dark), var(--clr-primary)); color: white; border-radius: 2rem; padding: 5rem 2rem; border: none; box-shadow: var(--shadow-medium); position: relative; overflow: hidden;">
+                <div class="card-glass text-center" style="background: linear-gradient(135deg, var(--clr-primary-dark), var(--clr-primary)); color: white; border-radius: 2rem; padding: 6rem 2rem; border: none; box-shadow: var(--shadow-medium); position: relative; overflow: hidden;">
                     <div class="noise-overlay"></div>
                     <div class="max-w-800" style="margin: 0 auto; position: relative; z-index: 10;">
                         <h2 class="text-h2 text-white mb-md" data-reveal class="reveal-rotate-in" style="color: white; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem;">Let's Build Smart Software <span class="text-accent">Together</span></h2>
