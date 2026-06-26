@@ -1,0 +1,58 @@
+/* Premium Fade In Up with Hardware Acceleration */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+}
+
+.animate-fade-up {
+    opacity: 0;
+    will-change: transform, opacity;
+    animation: fadeInUp 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Floating 3D Effect with Smooth Rotation */
+@keyframes float {
+    0% { transform: translate3d(0px, 0px, 0px) rotate(0deg); }
+    33% { transform: translate3d(10px, -20px, 0px) rotate(2deg); }
+    66% { transform: translate3d(-10px, -15px, 0px) rotate(-1deg); }
+    100% { transform: translate3d(0px, 0px, 0px) rotate(0deg); }
+}
+
+.animate-float {
+    will-change: transform;
+    animation: float 8s ease-in-out infinite;
+}
+
+/* Subtle Pulse Glow */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(253, 184, 19, 0.6); }
+    70% { box-shadow: 0 0 0 20px rgba(253, 184, 19, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(253, 184, 19, 0); }
+}
+
+.animate-pulse-glow {
+    animation: pulseGlow 2.5s infinite cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* Micro-interactions: Advanced 3D Hover Lift */
+.hover-lift {
+    transition: transform var(--transition-bounce), box-shadow var(--transition-base);
+    will-change: transform, box-shadow;
+}
+.hover-lift:hover {
+    transform: translate3d(0, -12px, 0) scale(1.02);
+    box-shadow: var(--shadow-medium), 0 20px 40px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TezTecch - Contact Us</title>
+    <meta name="description" content="Get in touch with TezTecch for premium software development, ERP, CRM, and digital solutions. Request a demo or quote today.">
+    <meta property="og:title" content="TezTecch - Contact Us">
+    <meta property="og:description" content="Get in touch with TezTecch for premium software development.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo" aria-label="TezTecch Home">TezTecch</a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="founder.html" class="nav-link">Founder</a></li>
+                <li><a href="contact.html" class="nav-link active btn btn-primary nav-cta">Contact Us</a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="page-content pt-0">
+        <!-- 1. Hero Section -->
+        <section class="relative overflow-hidden py-hero bg-gradient-hero text-white">
+            <div class="particles-overlay"></div>
+            
+            <div class="container relative z-10 text-center">
+                <div class="max-w-900 mt-md">
+                    <h1 class="animate-fade-up text-hero mb-md text-white">
+                        Let's Talk <span class="text-accent">Business</span>
+                    </h1>
+                    <p class="animate-fade-up delay-100 text-lead text-muted-light">
+                        Ready to accelerate your digital transformation? Reach out to our enterprise specialists today.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="animate-float abstract-sphere"></div>
+        </section>
+
+        <!-- 2. Contact Grid -->
+        <section class="section bg-light" style="margin-top: -4rem; padding-top: 0; position: relative; z-index: 20;">
+            <div class="container">
+                <div class="grid-2">
+                    
+                    <!-- Left: Info & Hours -->
+                    <div data-animate>
+                        <h2 class="text-h2 mb-md">Get In <span class="text-accent">Touch</span></h2>
+                        <p class="text-muted mb-lg">We typically respond to all inquiries within 2 hours during normal business operations.</p>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4 class="text-primary mb-xs">Headquarters</h4>
+                                <p class="text-muted">Plot 1/A/K, Beside Gajanan Primary School, Ayodhya Nagar, Nagpur – 440024</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4 class="text-primary mb-xs">Phone</h4>
+                                <p class="text-muted"><a href="tel:+918956610799">+91 89566 10799</a></p>
+                                <p class="text-muted"><a href="tel:+919822278791">+91 98222 78791</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4 class="text-primary mb-xs">Email</h4>
+                                <p class="text-muted"><a href="mailto:info@teztecch.com">info@teztecch.com</a></p>
+                                <p class="text-muted"><a href="mailto:hr@teztecch.com">hr@teztecch.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="card mt-md">
+                            <h4 class="text-primary mb-sm">Business Hours</h4>
+                            <div class="flex-column gap-sm text-muted">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <span>Monday - Friday</span>
+                                    <strong>9:00 AM - 7:00 PM</strong>
+                                </div>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <span>Saturday</span>
+                                    <strong>10:00 AM - 4:00 PM</strong>
+                                </div>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <span>Sunday</span>
+                                    <strong class="text-accent">Closed</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div data-animate class="delay-100">
+                        <div class="card" style="padding: 3rem 2rem;">
+                            <h3 class="text-h3 text-primary mb-md">Send an Inquiry</h3>
+                            <form id="contactForm" novalidate>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Full Name <span class="text-accent">*</span></label>
+                                    <input type="text" id="name" class="form-control" placeholder="John Doe" required aria-required="true">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address <span class="text-accent">*</span></label>
+                                    <input type="email" id="email" class="form-control" placeholder="john@company.com" required aria-required="true">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number <span class="text-accent">*</span></label>
+                                    <input type="tel" id="phone" class="form-control" placeholder="+91 00000 00000" required aria-required="true">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="requirement" class="form-label">Project Requirement</label>
+                                    <select id="requirement" class="form-control">
+                                        <option value="">Select an option...</option>
+                                        <option value="software">Custom Software Development</option>
+                                        <option value="erp">ERP / CRM Solution</option>
+                                        <option value="saas">SaaS Product</option>
+                                        <option value="other">Other Inquiry</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message <span class="text-accent">*</span></label>
+                                    <textarea id="message" class="form-control" placeholder="Tell us about your project goals..." required aria-required="true"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary w-full mt-sm" style="width: 100%;">Submit Inquiry</button>
+                                
+                                <div id="formMessage" class="form-message" role="alert" aria-live="assertive"></div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Map Placeholder -->
+        <section class="section">
+            <div class="container" data-animate>
+                <div class="map-placeholder">
+                    <span>Interactive Map Placeholder (Google Maps / Mapbox)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FAQ -->
+        <section class="section bg-surface pt-0">
+            <div class="container">
+                <div class="text-center mb-xl" data-animate>
+                    <h2 class="text-h2">Contact <span class="text-accent">FAQ</span></h2>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item" data-animate>
+                        <button class="faq-header" aria-expanded="false">
+                            Do you offer in-person consultations?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p class="text-muted pt-0 mb-md">Yes. We welcome clients to our headquarters in Nagpur for strategic workshops and discovery sessions.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item delay-100" data-animate>
+                        <button class="faq-header" aria-expanded="false">
+                            What happens after I submit this form?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p class="text-muted pt-0 mb-md">A Senior Project Strategist will review your requirements and reach out within 2 hours to schedule a brief introductory call.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item delay-200" data-animate>
+                        <button class="faq-header" aria-expanded="false">
+                            Is my project idea protected by an NDA?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p class="text-muted pt-0 mb-md">Absolutely. We sign a strict Non-Disclosure Agreement (NDA) before any detailed technical or business discussions begin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Final CTA -->
+        <section class="section pt-0">
+            <div class="container">
+                <div class="card-glass bg-gradient-cta text-center rounded-2xl py-cta border-none">
+                    <div class="max-w-800">
+                        <h2 class="text-h2 text-white mb-md" data-animate>Ready to <span class="text-accent">Innovate?</span></h2>
+                        <div data-animate class="delay-100 flex-center flex-wrap gap-md mt-md">
+                            <a href="mailto:info@teztecch.com" class="btn btn-accent animate-pulse-glow">Email Us Directly</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 class="footer-logo">TezTecch</h3>
+                <p class="footer-text">Empowering businesses through cutting-edge technology and premium digital solutions.</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Company</h4>
+                <a href="about.html" class="footer-link">About Us</a><br>
+                <a href="founder.html" class="footer-link">Our Founder</a><br>
+                <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Services</h4>
+                <a href="services.html" class="footer-link">Web Development</a><br>
+                <a href="services.html" class="footer-link">Digital Marketing</a><br>
+                <a href="services.html" class="footer-link">Enterprise Solutions</a>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Connect</h4>
+                <p class="footer-contact">contact@teztecch.com</p>
+                <p class="footer-contact">+91 123 456 7890</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="footer-copyright">&copy; 2026 TezTecch. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/particles.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
