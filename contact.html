@@ -25,7 +25,7 @@
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="founder.html" class="nav-link">Founder</a></li>
-                <li><a href="contact.html" class="nav-link active btn btn-primary nav-cta">Contact Us</a></li>
+                <li><a href="contact.html" class="nav-link active btn btn-primary nav-cta btn-shine-sweep btn-glow-primary">Contact Us</a></li>
             </ul>
 
             <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
@@ -38,62 +38,61 @@
 
     <main class="page-content pt-0">
         <!-- 1. Hero Section -->
-        <section class="relative overflow-hidden py-hero bg-gradient-hero text-white">
-            <div class="particles-overlay"></div>
-            
+        <section class="relative overflow-hidden py-hero bg-gradient-hero text-white aurora-mesh" style="position: relative; overflow: hidden; padding: 12rem 0 10rem; min-height: 70vh; display: flex; align-items: center;">
+            <div class="noise-overlay"></div>
             <div class="container relative z-10 text-center">
-                <div class="max-w-900 mt-md">
-                    <h1 class="animate-fade-up text-hero mb-md text-white">
+                <div class="max-w-900 mt-md" style="margin: 0 auto;">
+                    <h1 data-reveal class="reveal-rotate-in text-hero mb-md text-white" style="font-size: clamp(3rem, 5vw, 4.5rem); margin-bottom: 1.5rem;">
                         Let's Talk <span class="text-accent">Business</span>
                     </h1>
-                    <p class="animate-fade-up delay-100 text-lead text-muted-light">
+                    <p data-reveal class="reveal-fade-up text-lead text-muted-light" style="font-size: 1.25rem; color: rgba(255,255,255,0.85);">
                         Ready to accelerate your digital transformation? Reach out to our enterprise specialists today.
                     </p>
                 </div>
             </div>
             
-            <div class="animate-float abstract-sphere"></div>
+            <div class="animate-float abstract-sphere" style="position: absolute; right: 5%; top: 30%; width: 250px; height: 250px; background: linear-gradient(45deg, var(--clr-accent), transparent); border-radius: 50%; filter: blur(70px); opacity: 0.4;"></div>
         </section>
 
         <!-- 2. Contact Grid -->
-        <section class="section bg-light" style="margin-top: -4rem; padding-top: 0; position: relative; z-index: 20;">
+        <section class="section bg-light" style="margin-top: -4rem; padding-top: 0; position: relative; z-index: 20; background-color: #f8fafc;">
             <div class="container">
-                <div class="grid-2">
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem; align-items: flex-start;">
                     
                     <!-- Left: Info & Hours -->
-                    <div data-animate>
-                        <h2 class="text-h2 mb-md">Get In <span class="text-accent">Touch</span></h2>
-                        <p class="text-muted mb-lg">We typically respond to all inquiries within 2 hours during normal business operations.</p>
+                    <div data-reveal class="reveal-fade-left">
+                        <h2 class="text-h2 mb-md" style="font-size: 2.25rem; margin-bottom: 1rem;">Get In <span class="text-accent">Touch</span></h2>
+                        <p class="text-muted mb-lg" style="color: var(--clr-text-muted); margin-bottom: 2rem;">We typically respond to all inquiries within 2 hours during normal business operations.</p>
                         
-                        <div class="contact-info-card">
-                            <div class="contact-icon">📍</div>
+                        <div class="contact-info-card contact-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 1.5rem; display: flex; gap: 1.25rem; margin-bottom: 1.25rem; box-shadow: var(--shadow-soft);">
+                            <div class="contact-icon" style="font-size: 1.8rem;">📍</div>
                             <div>
-                                <h4 class="text-primary mb-xs">Headquarters</h4>
-                                <p class="text-muted">Plot 1/A/K, Beside Gajanan Primary School, Ayodhya Nagar, Nagpur – 440024</p>
+                                <h4 class="text-primary mb-xs" style="color: var(--clr-primary); margin-bottom: 0.25rem;">Headquarters</h4>
+                                <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Plot 1/A/K, Beside Gajanan Primary School, Ayodhya Nagar, Nagpur – 440024</p>
                             </div>
                         </div>
                         
-                        <div class="contact-info-card">
-                            <div class="contact-icon">📞</div>
+                        <div class="contact-info-card contact-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 1.5rem; display: flex; gap: 1.25rem; margin-bottom: 1.25rem; box-shadow: var(--shadow-soft);">
+                            <div class="contact-icon" style="font-size: 1.8rem;">📞</div>
                             <div>
-                                <h4 class="text-primary mb-xs">Phone</h4>
-                                <p class="text-muted"><a href="tel:+918956610799">+91 89566 10799</a></p>
-                                <p class="text-muted"><a href="tel:+919822278791">+91 98222 78791</a></p>
+                                <h4 class="text-primary mb-xs" style="color: var(--clr-primary); margin-bottom: 0.25rem;">Phone</h4>
+                                <p class="text-muted" style="font-size: 0.95rem;"><a href="tel:+918956610799" style="color: var(--clr-text-muted);">+91 89566 10799</a></p>
+                                <p class="text-muted" style="font-size: 0.95rem;"><a href="tel:+919822278791" style="color: var(--clr-text-muted);">+91 98222 78791</a></p>
                             </div>
                         </div>
                         
-                        <div class="contact-info-card">
-                            <div class="contact-icon">✉️</div>
+                        <div class="contact-info-card contact-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 1.5rem; display: flex; gap: 1.25rem; margin-bottom: 1.25rem; box-shadow: var(--shadow-soft);">
+                            <div class="contact-icon" style="font-size: 1.8rem;">✉️</div>
                             <div>
-                                <h4 class="text-primary mb-xs">Email</h4>
-                                <p class="text-muted"><a href="mailto:info@teztecch.com">info@teztecch.com</a></p>
-                                <p class="text-muted"><a href="mailto:hr@teztecch.com">hr@teztecch.com</a></p>
+                                <h4 class="text-primary mb-xs" style="color: var(--clr-primary); margin-bottom: 0.25rem;">Email</h4>
+                                <p class="text-muted" style="font-size: 0.95rem;"><a href="mailto:info@teztecch.com" style="color: var(--clr-text-muted);">info@teztecch.com</a></p>
+                                <p class="text-muted" style="font-size: 0.95rem;"><a href="mailto:hr@teztecch.com" style="color: var(--clr-text-muted);">hr@teztecch.com</a></p>
                             </div>
                         </div>
 
-                        <div class="card mt-md">
-                            <h4 class="text-primary mb-sm">Business Hours</h4>
-                            <div class="flex-column gap-sm text-muted">
+                        <div class="card mt-md contact-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem; box-shadow: var(--shadow-soft); margin-top: 2rem;">
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 1rem; font-size: 1.2rem;">Business Hours</h4>
+                            <div class="flex-column gap-sm text-muted" style="display: flex; flex-direction: column; gap: 0.75rem; color: var(--clr-text-muted);">
                                 <div style="display: flex; justify-content: space-between;">
                                     <span>Monday - Friday</span>
                                     <strong>9:00 AM - 7:00 PM</strong>
@@ -104,35 +103,35 @@
                                 </div>
                                 <div style="display: flex; justify-content: space-between;">
                                     <span>Sunday</span>
-                                    <strong class="text-accent">Closed</strong>
+                                    <strong class="text-accent" style="color: var(--clr-accent);">Closed</strong>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Right: Form -->
-                    <div data-animate class="delay-100">
-                        <div class="card" style="padding: 3rem 2rem;">
-                            <h3 class="text-h3 text-primary mb-md">Send an Inquiry</h3>
+                    <div data-reveal class="reveal-fade-right">
+                        <div class="card contact-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 3rem 2.5rem; box-shadow: var(--shadow-medium);">
+                            <h3 class="text-h3 text-primary mb-md" style="color: var(--clr-primary); margin-bottom: 1.5rem; font-size: 1.5rem;">Send an Inquiry</h3>
                             <form id="contactForm" novalidate>
-                                <div class="form-group">
-                                    <label for="name" class="form-label">Full Name <span class="text-accent">*</span></label>
-                                    <input type="text" id="name" class="form-control" placeholder="John Doe" required aria-required="true">
+                                <div class="form-group" style="margin-bottom: 1.25rem;">
+                                    <label for="name" class="form-label" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Full Name <span class="text-accent" style="color: var(--clr-accent);">*</span></label>
+                                    <input type="text" id="name" class="form-control" placeholder="John Doe" required aria-required="true" style="width: 100%; padding: 0.85rem 1.25rem; border-radius: var(--radius-sm); border: 1px solid rgba(0,0,0,0.1); background: #f8fafc; font-family: inherit;">
                                 </div>
                                 
-                                <div class="form-group">
-                                    <label for="email" class="form-label">Email Address <span class="text-accent">*</span></label>
-                                    <input type="email" id="email" class="form-control" placeholder="john@company.com" required aria-required="true">
+                                <div class="form-group" style="margin-bottom: 1.25rem;">
+                                    <label for="email" class="form-label" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email Address <span class="text-accent" style="color: var(--clr-accent);">*</span></label>
+                                    <input type="email" id="email" class="form-control" placeholder="john@company.com" required aria-required="true" style="width: 100%; padding: 0.85rem 1.25rem; border-radius: var(--radius-sm); border: 1px solid rgba(0,0,0,0.1); background: #f8fafc; font-family: inherit;">
                                 </div>
                                 
-                                <div class="form-group">
-                                    <label for="phone" class="form-label">Phone Number <span class="text-accent">*</span></label>
-                                    <input type="tel" id="phone" class="form-control" placeholder="+91 00000 00000" required aria-required="true">
+                                <div class="form-group" style="margin-bottom: 1.25rem;">
+                                    <label for="phone" class="form-label" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Phone Number <span class="text-accent" style="color: var(--clr-accent);">*</span></label>
+                                    <input type="tel" id="phone" class="form-control" placeholder="+91 00000 00000" required aria-required="true" style="width: 100%; padding: 0.85rem 1.25rem; border-radius: var(--radius-sm); border: 1px solid rgba(0,0,0,0.1); background: #f8fafc; font-family: inherit;">
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="requirement" class="form-label">Project Requirement</label>
-                                    <select id="requirement" class="form-control">
+                                <div class="form-group" style="margin-bottom: 1.25rem;">
+                                    <label for="requirement" class="form-label" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Project Requirement</label>
+                                    <select id="requirement" class="form-control" style="width: 100%; padding: 0.85rem 1.25rem; border-radius: var(--radius-sm); border: 1px solid rgba(0,0,0,0.1); background: #f8fafc; font-family: inherit;">
                                         <option value="">Select an option...</option>
                                         <option value="software">Custom Software Development</option>
                                         <option value="erp">ERP / CRM Solution</option>
@@ -141,14 +140,14 @@
                                     </select>
                                 </div>
                                 
-                                <div class="form-group">
-                                    <label for="message" class="form-label">Message <span class="text-accent">*</span></label>
-                                    <textarea id="message" class="form-control" placeholder="Tell us about your project goals..." required aria-required="true"></textarea>
+                                <div class="form-group" style="margin-bottom: 1.5rem;">
+                                    <label for="message" class="form-label" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message <span class="text-accent" style="color: var(--clr-accent);">*</span></label>
+                                    <textarea id="message" class="form-control" placeholder="Tell us about your project goals..." required aria-required="true" style="width: 100%; padding: 0.85rem 1.25rem; border-radius: var(--radius-sm); border: 1px solid rgba(0,0,0,0.1); background: #f8fafc; min-height: 120px; font-family: inherit; resize: vertical;"></textarea>
                                 </div>
                                 
-                                <button type="submit" class="btn btn-primary w-full mt-sm" style="width: 100%;">Submit Inquiry</button>
+                                <button type="submit" class="btn btn-primary btn-shine-sweep btn-glow-primary w-full mt-sm" style="width: 100%;">Submit Inquiry</button>
                                 
-                                <div id="formMessage" class="form-message" role="alert" aria-live="assertive"></div>
+                                <div id="formMessage" class="form-message" role="alert" aria-live="assertive" style="margin-top: 1rem;"></div>
                             </form>
                         </div>
                     </div>
@@ -158,46 +157,46 @@
         </section>
 
         <!-- 3. Map Placeholder -->
-        <section class="section">
-            <div class="container" data-animate>
-                <div class="map-placeholder">
+        <section class="section" style="padding: 3rem 0;">
+            <div class="container" data-reveal class="reveal-scale-in">
+                <div class="map-placeholder" style="background: linear-gradient(135deg, var(--clr-primary-light), var(--clr-primary)); border-radius: 2rem; height: 350px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.4); font-size: 1.2rem; font-weight: 600; text-align: center; box-shadow: var(--shadow-medium); border: 1px solid rgba(255,255,255,0.05);">
                     <span>Interactive Map Placeholder (Google Maps / Mapbox)</span>
                 </div>
             </div>
         </section>
 
         <!-- 4. FAQ -->
-        <section class="section bg-surface pt-0">
+        <section class="section bg-surface pt-0" style="padding: 5rem 0;">
             <div class="container">
-                <div class="text-center mb-xl" data-animate>
-                    <h2 class="text-h2">Contact <span class="text-accent">FAQ</span></h2>
+                <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <h2 class="text-h2" style="font-size: 2.5rem;">Contact <span class="text-accent">FAQ</span></h2>
                 </div>
-                <div class="faq-container">
-                    <div class="faq-item" data-animate>
+                <div class="faq-container" data-reveal-group>
+                    <div class="faq-item" style="background: var(--clr-surface); margin-bottom: 1rem; border-radius: var(--radius-md);" data-reveal class="reveal-fade-up">
                         <button class="faq-header" aria-expanded="false">
                             Do you offer in-person consultations?
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-content">
-                            <p class="text-muted pt-0 mb-md">Yes. We welcome clients to our headquarters in Nagpur for strategic workshops and discovery sessions.</p>
+                            <p class="text-muted pt-0 mb-md" style="color: var(--clr-text-muted);">Yes. We welcome clients to our headquarters in Nagpur for strategic workshops and discovery sessions.</p>
                         </div>
                     </div>
-                    <div class="faq-item delay-100" data-animate>
+                    <div class="faq-item" style="background: var(--clr-surface); margin-bottom: 1rem; border-radius: var(--radius-md);" data-reveal class="reveal-fade-up">
                         <button class="faq-header" aria-expanded="false">
                             What happens after I submit this form?
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-content">
-                            <p class="text-muted pt-0 mb-md">A Senior Project Strategist will review your requirements and reach out within 2 hours to schedule a brief introductory call.</p>
+                            <p class="text-muted pt-0 mb-md" style="color: var(--clr-text-muted);">A Senior Project Strategist will review your requirements and reach out within 2 hours to schedule a brief introductory call.</p>
                         </div>
                     </div>
-                    <div class="faq-item delay-200" data-animate>
+                    <div class="faq-item" style="background: var(--clr-surface); margin-bottom: 1rem; border-radius: var(--radius-md);" data-reveal class="reveal-fade-up">
                         <button class="faq-header" aria-expanded="false">
                             Is my project idea protected by an NDA?
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-content">
-                            <p class="text-muted pt-0 mb-md">Absolutely. We sign a strict Non-Disclosure Agreement (NDA) before any detailed technical or business discussions begin.</p>
+                            <p class="text-muted pt-0 mb-md" style="color: var(--clr-text-muted);">Absolutely. We sign a strict Non-Disclosure Agreement (NDA) before any detailed technical or business discussions begin.</p>
                         </div>
                     </div>
                 </div>
@@ -207,11 +206,12 @@
         <!-- 5. Final CTA -->
         <section class="section pt-0">
             <div class="container">
-                <div class="card-glass bg-gradient-cta text-center rounded-2xl py-cta border-none">
-                    <div class="max-w-800">
-                        <h2 class="text-h2 text-white mb-md" data-animate>Ready to <span class="text-accent">Innovate?</span></h2>
-                        <div data-animate class="delay-100 flex-center flex-wrap gap-md mt-md">
-                            <a href="mailto:info@teztecch.com" class="btn btn-accent animate-pulse-glow">Email Us Directly</a>
+                <div class="card-glass text-center" style="background: linear-gradient(135deg, var(--clr-primary-dark), var(--clr-primary)); color: white; border-radius: 2rem; padding: 5rem 2rem; border: none; box-shadow: var(--shadow-medium); position: relative; overflow: hidden;">
+                    <div class="noise-overlay"></div>
+                    <div class="max-w-800" style="margin: 0 auto; position: relative; z-index: 10;">
+                        <h2 class="text-h2 text-white mb-md" data-reveal class="reveal-rotate-in" style="color: white; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem;">Ready to <span class="text-accent">Innovate?</span></h2>
+                        <div data-reveal class="reveal-scale-in" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-top: 2rem;">
+                            <a href="mailto:info@teztecch.com" class="btn btn-accent btn-shine-sweep btn-glow-accent animate-pulse-glow">Email Us Directly</a>
                         </div>
                     </div>
                 </div>
@@ -220,11 +220,12 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-grid">
+    <footer class="footer" style="position: relative; overflow: hidden;">
+        <div class="noise-overlay"></div>
+        <div class="container footer-grid" style="position: relative; z-index: 2;">
             <div class="footer-col">
                 <h3 class="footer-logo">TezTecch</h3>
-                <p class="footer-text">Empowering businesses through cutting-edge technology and premium digital solutions.</p>
+                <p class="footer-text" style="color: rgba(255,255,255,0.7); margin-top: 1rem; font-size: 0.95rem;">Empowering businesses through cutting-edge technology and premium digital solutions.</p>
             </div>
             <div class="footer-col">
                 <h4 class="footer-heading">Company</h4>
@@ -244,7 +245,7 @@
                 <p class="footer-contact">+91 123 456 7890</p>
             </div>
         </div>
-        <div class="container footer-bottom">
+        <div class="container footer-bottom" style="position: relative; z-index: 2;">
             <p class="footer-copyright">&copy; 2026 TezTecch. All Rights Reserved.</p>
         </div>
     </footer>

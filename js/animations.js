@@ -1,30 +1,46 @@
 /**
  * animations.js
- * Handles scroll-based animations and intersection observers.
+ * High-performance Intersection Observer scroll reveals and stagger controller.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    const observerOptions = {
+    // 1. Reveal Animations on Scroll
+    const revealOptions = {
         root: null,
-        rootMargin: '0px',
-        threshold: 0.1
+        rootMargin: '0px -10% -10% 0px', // Trigger slightly before element enters center
+        threshold: 0.05
     };
 
-    const elementObserver = new IntersectionObserver((entries, observer) => {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Add the animation class when scrolled into view
-                entry.target.classList.add('animate-fade-up');
-                // Stop observing once animated
+                // Add the .active class to trigger the CSS transition
+                entry.target.classList.add('active');
+                
+                // If it contains an SVG to draw, trigger SVG path animation
+                if (entry.target.classList.contains('draw-svg')) {
+                    const paths = entry.target.querySelectorAll('path');
+                    paths.forEach(path => {
+                        path.style.strokeDashoffset = '0';
+                    });
+                }
+
+                // Stop observing once reveal is triggered
                 observer.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, revealOptions);
 
-    // Elements with 'data-animate' attribute will be observed
-    document.querySelectorAll('[data-animate]').forEach(el => {
-        // Ensure element starts invisible if it's going to fade in
-        el.style.opacity = '0';
-        elementObserver.observe(el);
+    // Dynamic Stagger Animations for children
+    document.querySelectorAll('[data-reveal-group]').forEach(parent => {
+        const children = parent.querySelectorAll('[data-reveal]');
+        children.forEach((child, index) => {
+            child.style.transitionDelay = `${(index + 1) * 120}ms`;
+        });
+    });
+
+    // Observe all individual reveal elements
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+        revealObserver.observe(el);
     });
 });

@@ -25,7 +25,7 @@
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="founder.html" class="nav-link active">Founder</a></li>
-                <li><a href="contact.html" class="nav-link btn btn-primary nav-cta">Contact Us</a></li>
+                <li><a href="contact.html" class="nav-link btn btn-primary nav-cta btn-shine-sweep btn-glow-primary">Contact Us</a></li>
             </ul>
 
             <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
@@ -38,45 +38,44 @@
 
     <main class="page-content pt-0">
         <!-- 1. Hero Section -->
-        <section class="relative overflow-hidden py-hero min-h-90vh flex-center bg-gradient-hero text-white">
-            <div class="particles-overlay"></div>
-            
+        <section class="relative overflow-hidden py-hero min-h-90vh flex-center bg-gradient-hero text-white aurora-mesh" style="position: relative; overflow: hidden; padding: 12rem 0 10rem; min-height: 80vh; display: flex; align-items: center;">
+            <div class="noise-overlay"></div>
             <div class="container relative z-10 text-center">
-                <div class="max-w-900">
-                    <h1 class="animate-fade-up text-hero mb-md text-white">
+                <div class="max-w-900" style="margin: 0 auto;">
+                    <h1 data-reveal class="reveal-rotate-in text-hero mb-md text-white" style="font-size: clamp(3rem, 5vw, 4.5rem); margin-bottom: 1.5rem;">
                         Meet Our <span class="text-accent">Founder</span>
                     </h1>
-                    <p class="animate-fade-up delay-100 text-lead text-muted-light mb-xl">
+                    <p data-reveal class="reveal-fade-up text-lead text-muted-light mb-xl" style="font-size: 1.25rem; margin-bottom: 2.5rem; color: rgba(255,255,255,0.85);">
                         Entrepreneur | Tech Visionary | Business Strategist | Startup Mentor | Keynote Speaker
                     </p>
-                    <div class="animate-fade-up delay-200 flex-center gap-md">
-                        <a href="#biography" class="btn btn-accent">Read Biography</a>
+                    <div data-reveal class="reveal-scale-in flex-center gap-md">
+                        <a href="#biography" class="btn btn-accent btn-shine-sweep btn-glow-accent">Read Biography</a>
                     </div>
                 </div>
             </div>
             
-            <div class="animate-float abstract-sphere"></div>
+            <div class="animate-float abstract-sphere" style="position: absolute; right: 5%; top: 30%; width: 250px; height: 250px; background: linear-gradient(45deg, var(--clr-accent), transparent); border-radius: 50%; filter: blur(70px); opacity: 0.4;"></div>
         </section>
 
         <!-- 2. Biography Section -->
-        <section id="biography" class="section bg-light">
+        <section id="biography" class="section bg-light" style="background-color: #f8fafc;">
             <div class="container">
-                <div class="grid-2">
-                    <div data-animate>
-                        <div class="about-illustration flex-center" style="background: url('https://teztecch.com/assets/img/founder-img.png') center/cover no-repeat;">
-                            <!-- Portrait Placeholder / Image mapped from original URL -->
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
+                    <div data-reveal class="reveal-fade-left">
+                        <div class="about-illustration flex-center founder-card" style="aspect-ratio: 4/5; background: url('https://teztecch.com/assets/img/founder-img.png') center/cover no-repeat; border-radius: 2rem; box-shadow: var(--shadow-medium);">
+                            <!-- Portrait Image mapped from original URL -->
                         </div>
                     </div>
-                    <div data-animate class="delay-100">
-                        <h2 class="text-h2 mb-sm">Tejaswwini <span class="text-accent">Bhandarrkar</span></h2>
-                        <h4 class="text-primary mb-md">Founder & CEO, TezTecch</h4>
-                        <p class="text-lead text-muted mb-md">
+                    <div data-reveal class="reveal-fade-right">
+                        <h2 class="text-h2 mb-sm" style="font-size: 2.25rem; margin-bottom: 0.5rem;">Tejaswwini <span class="text-accent">Bhandarrkar</span></h2>
+                        <h4 class="text-primary mb-md" style="color: var(--clr-primary); margin-bottom: 1.5rem; font-size: 1.15rem;">Founder & CEO, TezTecch</h4>
+                        <p class="text-lead text-muted mb-md" style="color: var(--clr-text-muted); margin-bottom: 1rem;">
                             Tejaswini Bhandarkar is the dynamic founder of Teztecch — a leading full-service company delivering excellence in IT, Branding, and Digital Solutions. A Computer Science Engineer with an M.Tech, Tejaswini is a perfect blend of technical prowess, creative vision, and entrepreneurial spirit.
                         </p>
-                        <p class="text-lead text-muted mb-md">
+                        <p class="text-lead text-muted mb-md" style="color: var(--clr-text-muted); margin-bottom: 1rem;">
                             From developing cutting-edge tech solutions to creating powerful brand stories, she has built Teztecch as a hub of innovation and impact.
                         </p>
-                        <p class="text-lead text-muted mb-lg">
+                        <p class="text-lead text-muted mb-lg" style="color: var(--clr-text-muted);">
                             Raised in a values-driven family, Tejaswini has carved her own space in the digital world, leading from the front with grace, grit, and a growth mindset. She is not only building brands but shaping careers, creating communities, and setting benchmarks in modern entrepreneurship.
                         </p>
                     </div>
@@ -85,21 +84,21 @@
         </section>
 
         <!-- 3. Leadership Philosophy & Vision -->
-        <section class="section bg-primary-dark text-white relative overflow-hidden">
-            <div class="particles-overlay"></div>
+        <section class="section bg-primary-dark text-white relative overflow-hidden" style="background-color: var(--clr-primary-dark); padding: 5rem 0;">
+            <div class="noise-overlay"></div>
             <div class="container relative z-10">
-                <div class="grid-2">
-                    <div class="card-glass hover-lift" data-animate>
-                        <div class="icon-box mb-md">🧠</div>
-                        <h3 class="text-h3 text-white mb-sm">Leadership Philosophy</h3>
-                        <p class="text-muted-light text-lead">
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;" data-reveal-group>
+                    <div class="card-glass hover-lift founder-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
+                        <div class="icon-box mb-md" style="font-size: 2.5rem; margin-bottom: 1rem;">🧠</div>
+                        <h3 class="text-h3 text-white mb-sm" style="color: white; margin-bottom: 0.75rem;">Leadership Philosophy</h3>
+                        <p class="text-muted-light text-lead" style="color: rgba(255,255,255,0.7); font-size: 1.05rem;">
                             "True leadership is not about managing people; it's about empowering them to realize their highest potential. By cultivating a culture of empathy, continuous learning, and radical transparency, we build teams that don't just write code, but architect the future."
                         </p>
                     </div>
-                    <div class="card-glass hover-lift delay-100" data-animate>
-                        <div class="icon-box mb-md">🚀</div>
-                        <h3 class="text-h3 text-white mb-sm">Vision</h3>
-                        <p class="text-muted-light text-lead">
+                    <div class="card-glass hover-lift founder-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
+                        <div class="icon-box mb-md" style="font-size: 2.5rem; margin-bottom: 1rem;">🚀</div>
+                        <h3 class="text-h3 text-white mb-sm" style="color: white; margin-bottom: 0.75rem;">Vision</h3>
+                        <p class="text-muted-light text-lead" style="color: rgba(255,255,255,0.7); font-size: 1.05rem;">
                             "To democratize access to premium enterprise technology. I envision a world where businesses of all scales can leverage world-class software architectures to disrupt markets, scale exponentially, and drive meaningful global impact."
                         </p>
                     </div>
@@ -110,37 +109,37 @@
         <!-- 4. Professional Journey Timeline -->
         <section class="section">
             <div class="container">
-                <div class="text-center mb-xl" data-animate>
-                    <h2 class="text-h2">The <span class="text-accent">Journey</span></h2>
-                    <p class="text-lead text-muted mt-sm">Milestones of continuous growth and innovation.</p>
+                <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <h2 class="text-h2" style="font-size: 2.5rem;">The <span class="text-accent">Journey</span></h2>
+                    <p class="text-lead text-muted mt-sm" style="color: var(--clr-text-muted);">Milestones of continuous growth and innovation.</p>
                 </div>
-                <div class="process-timeline">
-                    <div class="timeline-item" data-animate>
+                <div class="process-timeline" data-reveal-group>
+                    <div class="timeline-item" data-reveal class="reveal-fade-left">
                         <div class="timeline-dot"></div>
-                        <div class="card hover-lift">
-                            <h4 class="text-primary mb-xs">Academic Foundation</h4>
-                            <p class="text-muted">Master of Technology (M.Tech) in Computer Science Engineering, laying the deep technical groundwork for complex problem-solving.</p>
+                        <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
+                            <h4 class="text-primary mb-xs" style="color: var(--clr-primary); margin-bottom: 0.5rem;">Academic Foundation</h4>
+                            <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Master of Technology (M.Tech) in Computer Science Engineering, laying the deep technical groundwork for complex problem-solving.</p>
                         </div>
                     </div>
-                    <div class="timeline-item" data-animate>
+                    <div class="timeline-item" data-reveal class="reveal-fade-right">
                         <div class="timeline-dot"></div>
-                        <div class="card hover-lift">
-                            <h4 class="text-primary mb-xs">The Vision Sparks</h4>
-                            <p class="text-muted">Recognized the massive gap in the market for a truly integrated digital engineering and branding agency that prioritizes enterprise quality.</p>
+                        <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
+                            <h4 class="text-primary mb-xs" style="color: var(--clr-primary); margin-bottom: 0.5rem;">The Vision Sparks</h4>
+                            <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Recognized the massive gap in the market for a truly integrated digital engineering and branding agency that prioritizes enterprise quality.</p>
                         </div>
                     </div>
-                    <div class="timeline-item" data-animate>
+                    <div class="timeline-item" data-reveal class="reveal-fade-left">
                         <div class="timeline-dot"></div>
-                        <div class="card hover-lift">
-                            <h4 class="text-primary mb-xs">Founding TezTecch</h4>
-                            <p class="text-muted">Officially launched TezTecch, rapidly scaling it from a boutique consultancy into a premier digital transformation powerhouse.</p>
+                        <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
+                            <h4 class="text-primary mb-xs" style="color: var(--clr-primary); margin-bottom: 0.5rem;">Founding TezTecch</h4>
+                            <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Officially launched TezTecch, rapidly scaling it from a boutique consultancy into a premier digital transformation powerhouse.</p>
                         </div>
                     </div>
-                    <div class="timeline-item" data-animate>
+                    <div class="timeline-item" data-reveal class="reveal-fade-right">
                         <div class="timeline-dot"></div>
-                        <div class="card hover-lift">
-                            <h4 class="text-primary mb-xs">Community Expansion</h4>
-                            <p class="text-muted">Launched Teztecch Internshala and community programs, training the next generation of software engineers and digital creators.</p>
+                        <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
+                            <h4 class="text-primary mb-xs" style="color: var(--clr-primary); margin-bottom: 0.5rem;">Community Expansion</h4>
+                            <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Launched Teztecch Internshala and community programs, training the next generation of software engineers and digital creators.</p>
                         </div>
                     </div>
                 </div>
@@ -148,41 +147,41 @@
         </section>
 
         <!-- 5. Achievements -->
-        <section class="section bg-light">
+        <section class="section bg-light" style="background-color: #f8fafc; padding: 5rem 0;">
             <div class="container">
-                <div class="text-center mb-xl" data-animate>
-                    <h2 class="text-h2">Key <span class="text-accent">Achievements</span></h2>
+                <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <h2 class="text-h2" style="font-size: 2.5rem;">Key <span class="text-accent">Achievements</span></h2>
                 </div>
-                <div class="grid-3">
-                    <div class="card hover-lift text-center" data-animate>
-                        <div class="text-accent font-size-6rem mb-sm" style="line-height:1;">🏆</div>
-                        <h4 class="text-primary mb-xs">Industry Recognition</h4>
-                        <p class="text-muted">Acknowledged as a leading tech visionary and business strategist.</p>
+                <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;" data-reveal-group>
+                    <div class="card hover-lift text-center founder-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2.5rem; text-align: center;" data-reveal class="reveal-scale-in">
+                        <div class="text-accent font-size-6rem mb-sm" style="line-height:1; font-size: 5rem; margin-bottom: 1rem; color: var(--clr-accent);">🏆</div>
+                        <h4 class="text-primary mb-xs" style="color: var(--clr-primary); margin-bottom: 0.5rem;">Industry Recognition</h4>
+                        <p class="text-muted" style="color: var(--clr-text-muted);">Acknowledged as a leading tech visionary and business strategist.</p>
                     </div>
-                    <div class="card hover-lift text-center delay-100" data-animate>
-                        <div class="text-accent font-size-6rem mb-sm" style="line-height:1;">🌍</div>
-                        <h4 class="text-primary mb-xs">Community Builder</h4>
-                        <p class="text-muted">Mentored hundreds of students and professionals through Teztecch Internshala.</p>
+                    <div class="card hover-lift text-center founder-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2.5rem; text-align: center;" data-reveal class="reveal-scale-in">
+                        <div class="text-accent font-size-6rem mb-sm" style="line-height:1; font-size: 5rem; margin-bottom: 1rem; color: var(--clr-accent);">🌍</div>
+                        <h4 class="text-primary mb-xs" style="color: var(--clr-primary); margin-bottom: 0.5rem;">Community Builder</h4>
+                        <p class="text-muted" style="color: var(--clr-text-muted);">Mentored hundreds of students and professionals through Teztecch Internshala.</p>
                     </div>
-                    <div class="card hover-lift text-center delay-200" data-animate>
-                        <div class="text-accent font-size-6rem mb-sm" style="line-height:1;">💼</div>
-                        <h4 class="text-primary mb-xs">Enterprise Growth</h4>
-                        <p class="text-muted">Scaled Teztecch to service top-tier clients across multiple global industries.</p>
+                    <div class="card hover-lift text-center founder-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2.5rem; text-align: center;" data-reveal class="reveal-scale-in">
+                        <div class="text-accent font-size-6rem mb-sm" style="line-height:1; font-size: 5rem; margin-bottom: 1rem; color: var(--clr-accent);">💼</div>
+                        <h4 class="text-primary mb-xs" style="color: var(--clr-primary); margin-bottom: 0.5rem;">Enterprise Growth</h4>
+                        <p class="text-muted" style="color: var(--clr-text-muted);">Scaled Teztecch to service top-tier clients across multiple global industries.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 6. Personal Message -->
-        <section class="section">
+        <section class="section" style="padding: 5rem 0;">
             <div class="container">
-                <div class="max-w-900 text-center">
-                    <div class="card-glass bg-primary-dark p-lg rounded-2xl" data-animate>
-                        <div class="text-accent mb-md" style="font-size: 4rem; font-family: serif; line-height: 0.5;">"</div>
-                        <h3 class="text-white text-lead mb-md" style="line-height: 1.8; font-style: italic;">
+                <div class="max-w-900 text-center" style="margin: 0 auto;">
+                    <div class="card-glass bg-primary-dark p-lg rounded-2xl founder-card" style="background: rgba(4, 47, 26, 0.4); border-color: rgba(10, 79, 46, 0.3); padding: 3rem; border-radius: 2rem;" data-reveal class="reveal-fade-up">
+                        <div class="text-accent mb-md" style="font-size: 4rem; font-family: serif; line-height: 0.5; color: var(--clr-accent); margin-bottom: 1.5rem;">"</div>
+                        <h3 class="text-white text-lead mb-md" style="line-height: 1.8; font-style: italic; color: white; margin-bottom: 1.5rem; font-size: 1.35rem;">
                             Technology is only as powerful as the human intent behind it. We don't just write code; we architect solutions that empower people, scale businesses, and create lasting legacies. I invite you to join us on this journey of relentless innovation.
                         </h3>
-                        <h4 class="text-accent">— Tejaswwini Bhandarrkar</h4>
+                        <h4 class="text-accent" style="color: var(--clr-accent);">— Tejaswwini Bhandarrkar</h4>
                     </div>
                 </div>
             </div>
@@ -191,12 +190,13 @@
         <!-- 7. Final CTA -->
         <section class="section pt-0">
             <div class="container">
-                <div class="card-glass bg-gradient-cta text-center rounded-2xl py-cta border-none">
-                    <div class="max-w-800">
-                        <h2 class="text-h2 text-white mb-md" data-animate>Partner with <span class="text-accent">Excellence</span></h2>
-                        <div data-animate class="delay-100 flex-center flex-wrap gap-md">
-                            <a href="contact.html" class="btn btn-accent animate-pulse-glow">Work With Us</a>
-                            <a href="services.html" class="btn btn-glass text-white border-white-20">View Services</a>
+                <div class="card-glass text-center" style="background: linear-gradient(135deg, var(--clr-primary-dark), var(--clr-primary)); color: white; border-radius: 2rem; padding: 5rem 2rem; border: none; box-shadow: var(--shadow-medium); position: relative; overflow: hidden;">
+                    <div class="noise-overlay"></div>
+                    <div class="max-w-800" style="margin: 0 auto; position: relative; z-index: 10;">
+                        <h2 class="text-h2 text-white mb-md" data-reveal class="reveal-rotate-in" style="color: white; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem;">Partner with <span class="text-accent">Excellence</span></h2>
+                        <div data-reveal class="reveal-scale-in" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-top: 2rem;">
+                            <a href="contact.html" class="btn btn-accent btn-shine-sweep btn-glow-accent animate-pulse-glow">Work With Us</a>
+                            <a href="services.html" class="btn btn-glass btn-shine-sweep" style="color: white; border-color: rgba(255,255,255,0.25);">View Services</a>
                         </div>
                     </div>
                 </div>
@@ -205,11 +205,12 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-grid">
+    <footer class="footer" style="position: relative; overflow: hidden;">
+        <div class="noise-overlay"></div>
+        <div class="container footer-grid" style="position: relative; z-index: 2;">
             <div class="footer-col">
                 <h3 class="footer-logo">TezTecch</h3>
-                <p class="footer-text">Empowering businesses through cutting-edge technology and premium digital solutions.</p>
+                <p class="footer-text" style="color: rgba(255,255,255,0.7); margin-top: 1rem; font-size: 0.95rem;">Empowering businesses through cutting-edge technology and premium digital solutions.</p>
             </div>
             <div class="footer-col">
                 <h4 class="footer-heading">Company</h4>
@@ -229,7 +230,7 @@
                 <p class="footer-contact">+91 123 456 7890</p>
             </div>
         </div>
-        <div class="container footer-bottom">
+        <div class="container footer-bottom" style="position: relative; z-index: 2;">
             <p class="footer-copyright">&copy; 2026 TezTecch. All Rights Reserved.</p>
         </div>
     </footer>

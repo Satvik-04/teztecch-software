@@ -822,3 +822,153 @@ textarea.form-control {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: var(--spacing-md);
 }
+
+/* ==========================================================================
+   PREMIUM MOTION & DEPTH STYLING UTILITIES
+   ========================================================================== */
+
+/* 3D Card Reflection Glare */
+.card-shine-glare {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    border-radius: inherit;
+    z-index: 5;
+    mix-blend-mode: screen;
+    transition: background 0.15s ease-out;
+}
+
+/* Card 3D Setup */
+.service-card, .founder-card, .contact-card, .timeline-item, .about-card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s var(--ease-out-expo), border-color 0.4s var(--ease-out-expo);
+    will-change: transform, box-shadow;
+}
+
+.service-card:hover {
+    border-color: rgba(253, 184, 19, 0.45);
+    box-shadow: 0 25px 60px -15px rgba(4, 47, 26, 0.25), 0 0 30px rgba(253, 184, 19, 0.15);
+}
+
+.founder-card:hover {
+    border-color: rgba(4, 47, 26, 0.3);
+    box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.35);
+}
+
+/* Interactive Glowing Counter Stats */
+.stat-number.pulse-glow-highlight {
+    animation: counterGlow 1.2s ease-out forwards;
+}
+
+@keyframes counterGlow {
+    0% { transform: scale(1); text-shadow: 0 0 0 rgba(253, 184, 19, 0); }
+    50% { transform: scale(1.08); text-shadow: 0 0 20px rgba(253, 184, 19, 0.6); }
+    100% { transform: scale(1); text-shadow: 0 0 10px rgba(253, 184, 19, 0.2); }
+}
+
+/* Button Shiny Press / Loading State */
+.loading-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spinSpinner 0.8s linear infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+@keyframes spinSpinner {
+    to { transform: rotate(360deg); }
+}
+
+/* Validation Shaking Animation */
+@keyframes shakeAnimation {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-8px); }
+    40%, 80% { transform: translateX(8px); }
+}
+
+.shake-validation {
+    animation: shakeAnimation 0.5s ease-in-out;
+}
+
+/* Success SVG Checkmark & Alert styles */
+.success-alert {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: 1.25rem;
+    background: rgba(10, 79, 46, 0.1);
+    border: 1px solid rgba(10, 79, 46, 0.3);
+    border-radius: var(--radius-md);
+    color: var(--clr-primary-light);
+    backdrop-filter: blur(10px);
+}
+
+.check-icon {
+    width: 28px;
+    height: 28px;
+    stroke: var(--clr-primary);
+    stroke-width: 4;
+    stroke-mlinecap: round;
+    stroke-linejoin: round;
+}
+
+.check-circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+    stroke: var(--clr-primary);
+    fill: none;
+    animation: drawCircle 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.check-path {
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: drawCheck 0.4s cubic-bezier(0.65, 0, 0.45, 1) 0.5s forwards;
+}
+
+@keyframes drawCircle {
+    to { stroke-dashoffset: 0; }
+}
+
+@keyframes drawCheck {
+    to { stroke-dashoffset: 0; }
+}
+
+/* Hamburger active transformation to X */
+#mobile-menu-btn.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#mobile-menu-btn.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Active Nav Highlight Line */
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0%; height: 2px;
+    background: var(--clr-accent);
+    transition: width var(--transition-fast);
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+

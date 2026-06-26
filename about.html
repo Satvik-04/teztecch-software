@@ -25,7 +25,7 @@
                 <li><a href="about.html" class="nav-link active">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="founder.html" class="nav-link">Founder</a></li>
-                <li><a href="contact.html" class="nav-link btn btn-primary nav-cta">Contact Us</a></li>
+                <li><a href="contact.html" class="nav-link btn btn-primary nav-cta btn-shine-sweep btn-glow-primary">Contact Us</a></li>
             </ul>
 
             <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
@@ -38,41 +38,40 @@
 
     <main class="page-content pt-0">
         <!-- 1. Hero Section -->
-        <section class="relative overflow-hidden py-hero min-h-90vh flex-center bg-gradient-hero text-white">
-            <div class="particles-overlay"></div>
-            
+        <section class="relative overflow-hidden py-hero min-h-90vh flex-center bg-gradient-hero text-white aurora-mesh" style="position: relative; overflow: hidden; padding: 12rem 0 10rem; min-height: 80vh; display: flex; align-items: center;">
+            <div class="noise-overlay"></div>
             <div class="container relative z-10 text-center">
-                <div class="max-w-900">
-                    <h1 class="animate-fade-up text-hero mb-md text-white">
+                <div class="max-w-900" style="margin: 0 auto;">
+                    <h1 data-reveal class="reveal-rotate-in text-hero mb-md text-white" style="font-size: clamp(3rem, 5vw, 4.5rem); margin-bottom: 1.5rem;">
                         About <span class="text-accent">Teztecch</span> Software Development
                     </h1>
-                    <p class="animate-fade-up delay-100 text-lead text-muted-light mb-xl">
+                    <p data-reveal class="reveal-fade-up text-lead text-muted-light mb-xl" style="font-size: 1.25rem; margin-bottom: 2.5rem; color: rgba(255,255,255,0.85);">
                         Pioneering the future of enterprise software by merging unparalleled technical expertise with world-class design thinking.
                     </p>
-                    <div class="animate-fade-up delay-200 flex-center gap-md">
-                        <a href="#story" class="btn btn-accent">Discover Our Story</a>
+                    <div data-reveal class="reveal-scale-in flex-center gap-md">
+                        <a href="#story" class="btn btn-accent btn-shine-sweep btn-glow-accent">Discover Our Story</a>
                     </div>
                 </div>
             </div>
             
-            <div class="animate-float abstract-sphere"></div>
+            <div class="animate-float abstract-sphere" style="position: absolute; right: 5%; top: 30%; width: 250px; height: 250px; background: linear-gradient(45deg, var(--clr-accent), transparent); border-radius: 50%; filter: blur(70px); opacity: 0.4;"></div>
         </section>
 
         <!-- 2. Company Story -->
         <section id="story" class="section">
             <div class="container">
-                <div class="grid-2">
-                    <div data-animate>
-                        <div class="about-illustration flex-center">
-                            <div class="text-white opacity-20 font-size-6rem">✧</div>
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
+                    <div data-reveal class="reveal-fade-left">
+                        <div class="about-illustration flex-center about-card" style="aspect-ratio: 4/3; background: linear-gradient(45deg, var(--clr-primary-light), var(--clr-primary)); border-radius: 2rem; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-medium);">
+                            <div class="text-white opacity-20 font-size-6rem" style="font-size: 6rem; color: rgba(255,255,255,0.25);">✧</div>
                         </div>
                     </div>
-                    <div data-animate class="delay-100">
-                        <h2 class="text-h2 mb-md">Engineering Excellence, <br><span class="text-accent">Delivering Success.</span></h2>
-                        <p class="text-lead text-muted mb-md">
+                    <div data-reveal class="reveal-fade-right">
+                        <h2 class="text-h2 mb-md" style="margin-bottom: 1.5rem; font-size: clamp(2rem, 3vw, 2.5rem);">Engineering Excellence, <br><span class="text-accent">Delivering Success.</span></h2>
+                        <p class="text-lead text-muted mb-md" style="margin-bottom: 1rem; color: var(--clr-text-muted);">
                             Founded with a vision to bridge the gap between complex business challenges and elegant technological solutions, Teztecch is more than a software vendor — we are your strategic digital partner.
                         </p>
-                        <p class="text-lead text-muted mb-lg">
+                        <p class="text-lead text-muted mb-lg" style="color: var(--clr-text-muted);">
                             We pride ourselves on our deep enterprise roots, our commitment to clean architecture, and our relentless pursuit of perfection in every line of code we ship.
                         </p>
                     </div>
@@ -81,20 +80,21 @@
         </section>
 
         <!-- 3. Mission & Vision -->
-        <section class="section bg-primary-dark text-white relative overflow-hidden">
+        <section class="section bg-primary-dark text-white relative overflow-hidden" style="background-color: var(--clr-primary-dark); padding: 5rem 0;">
+            <div class="noise-overlay"></div>
             <div class="container relative z-10">
-                <div class="grid-2">
-                    <div class="card-glass hover-lift" data-animate>
-                        <div class="icon-box mb-md">🎯</div>
-                        <h3 class="text-h3 text-white mb-sm">Our Mission</h3>
-                        <p class="text-muted-light text-lead">
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;" data-reveal-group>
+                    <div class="card-glass hover-lift about-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
+                        <div class="icon-box mb-md" style="font-size: 2.5rem; margin-bottom: 1rem;">🎯</div>
+                        <h3 class="text-h3 text-white mb-sm" style="color: white; margin-bottom: 0.75rem;">Our Mission</h3>
+                        <p class="text-muted-light text-lead" style="color: rgba(255,255,255,0.7); font-size: 1.05rem;">
                             To empower enterprises worldwide by delivering robust, scalable, and beautifully designed software that solves real-world problems and accelerates digital transformation.
                         </p>
                     </div>
-                    <div class="card-glass hover-lift delay-100" data-animate>
-                        <div class="icon-box mb-md">👁️</div>
-                        <h3 class="text-h3 text-white mb-sm">Our Vision</h3>
-                        <p class="text-muted-light text-lead">
+                    <div class="card-glass hover-lift about-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
+                        <div class="icon-box mb-md" style="font-size: 2.5rem; margin-bottom: 1rem;">👁️</div>
+                        <h3 class="text-h3 text-white mb-sm" style="color: white; margin-bottom: 0.75rem;">Our Vision</h3>
+                        <p class="text-muted-light text-lead" style="color: rgba(255,255,255,0.7); font-size: 1.05rem;">
                             To be the global gold standard in premium software engineering, known for our uncompromising quality, innovative approaches, and deep commitment to client success.
                         </p>
                     </div>
@@ -103,41 +103,41 @@
         </section>
 
         <!-- 4. Core Values -->
-        <section class="section bg-light">
+        <section class="section bg-light" style="background-color: #f8fafc;">
             <div class="container">
-                <div class="text-center mb-xl" data-animate>
-                    <h2 class="text-h2">The Pillars of Our <span class="text-accent">Culture</span></h2>
+                <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <h2 class="text-h2" style="font-size: 2.5rem;">The Pillars of Our <span class="text-accent">Culture</span></h2>
                 </div>
-                <div class="grid-3">
-                    <div class="card hover-lift" data-animate>
-                        <div class="icon-box icon-box-dark mb-md">💡</div>
-                        <h4 class="text-primary mb-sm">Innovation</h4>
-                        <p class="text-muted">Continuously exploring the frontier of technology to bring cutting-edge solutions.</p>
+                <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;" data-reveal-group>
+                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;" data-reveal class="reveal-scale-in">
+                        <div class="icon-box icon-box-dark mb-md" style="font-size: 2.2rem; margin-bottom: 1rem;">💡</div>
+                        <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Innovation</h4>
+                        <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Continuously exploring the frontier of technology to bring cutting-edge solutions.</p>
                     </div>
-                    <div class="card hover-lift delay-100" data-animate>
-                        <div class="icon-box icon-box-dark mb-md">⭐</div>
-                        <h4 class="text-primary mb-sm">Quality</h4>
-                        <p class="text-muted">Uncompromising standards in every pixel designed and every function written.</p>
+                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;" data-reveal class="reveal-scale-in">
+                        <div class="icon-box icon-box-dark mb-md" style="font-size: 2.2rem; margin-bottom: 1rem;">⭐</div>
+                        <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Quality</h4>
+                        <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Uncompromising standards in every pixel designed and every function written.</p>
                     </div>
-                    <div class="card hover-lift delay-200" data-animate>
-                        <div class="icon-box icon-box-dark mb-md">🤝</div>
-                        <h4 class="text-primary mb-sm">Reliability</h4>
-                        <p class="text-muted">Building highly resilient architectures that businesses can confidently rely on.</p>
+                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;" data-reveal class="reveal-scale-in">
+                        <div class="icon-box icon-box-dark mb-md" style="font-size: 2.2rem; margin-bottom: 1rem;">🤝</div>
+                        <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Reliability</h4>
+                        <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Building highly resilient architectures that businesses can confidently rely on.</p>
                     </div>
-                    <div class="card hover-lift delay-300" data-animate>
-                        <div class="icon-box icon-box-dark mb-md">🛡️</div>
-                        <h4 class="text-primary mb-sm">Security</h4>
-                        <p class="text-muted">Embedding bank-grade security protocols into the core of our development lifecycle.</p>
+                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;" data-reveal class="reveal-scale-in">
+                        <div class="icon-box icon-box-dark mb-md" style="font-size: 2.2rem; margin-bottom: 1rem;">🛡️</div>
+                        <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Security</h4>
+                        <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Embedding bank-grade security protocols into the core of our development lifecycle.</p>
                     </div>
-                    <div class="card hover-lift delay-400" data-animate>
-                        <div class="icon-box icon-box-dark mb-md">🔍</div>
-                        <h4 class="text-primary mb-sm">Transparency</h4>
-                        <p class="text-muted">Maintaining open, honest communication throughout the entire project duration.</p>
+                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;" data-reveal class="reveal-scale-in">
+                        <div class="icon-box icon-box-dark mb-md" style="font-size: 2.2rem; margin-bottom: 1rem;">🔍</div>
+                        <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Transparency</h4>
+                        <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Maintaining open, honest communication throughout the entire project duration.</p>
                     </div>
-                    <div class="card hover-lift delay-500" data-animate>
-                        <div class="icon-box icon-box-dark mb-md">📈</div>
-                        <h4 class="text-primary mb-sm">Customer Success</h4>
-                        <p class="text-muted">Our true measure of achievement is the measurable growth of our clients.</p>
+                    <div class="card hover-lift about-card" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;" data-reveal class="reveal-scale-in">
+                        <div class="icon-box icon-box-dark mb-md" style="font-size: 2.2rem; margin-bottom: 1rem;">📈</div>
+                        <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Customer Success</h4>
+                        <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Our true measure of achievement is the measurable growth of our clients.</p>
                     </div>
                 </div>
             </div>
@@ -146,58 +146,58 @@
         <!-- 5. Development Process -->
         <section class="section">
             <div class="container">
-                <div class="text-center mb-xl" data-animate>
-                    <h2 class="text-h2">How We <span class="text-accent">Execute</span></h2>
-                    <p class="text-lead text-muted mt-sm">Our streamlined methodology guarantees precision at every step.</p>
+                <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <h2 class="text-h2" style="font-size: 2.5rem;">How We <span class="text-accent">Execute</span></h2>
+                    <p class="text-lead text-muted mt-sm" style="color: var(--clr-text-muted);">Our streamlined methodology guarantees precision at every step.</p>
                 </div>
-                <div class="process-timeline">
-                    <div class="timeline-item" data-animate>
+                <div class="process-timeline" data-reveal-group>
+                    <div class="timeline-item" data-reveal class="reveal-fade-left">
                         <div class="timeline-dot"></div>
-                        <div class="card hover-lift">
-                            <h4 class="text-primary mb-sm">1. Requirement Analysis</h4>
-                            <p class="text-muted">Deep dive into business goals, technical constraints, and user needs to form a solid blueprint.</p>
+                        <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">1. Requirement Analysis</h4>
+                            <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Deep dive into business goals, technical constraints, and user needs to form a solid blueprint.</p>
                         </div>
                     </div>
-                    <div class="timeline-item" data-animate>
+                    <div class="timeline-item" data-reveal class="reveal-fade-right">
                         <div class="timeline-dot"></div>
-                        <div class="card hover-lift">
-                            <h4 class="text-primary mb-sm">2. Planning & Architecture</h4>
-                            <p class="text-muted">Selecting the optimal tech stack and designing scalable database schemas and system architectures.</p>
+                        <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">2. Planning & Architecture</h4>
+                            <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Selecting the optimal tech stack and designing scalable database schemas and system architectures.</p>
                         </div>
                     </div>
-                    <div class="timeline-item" data-animate>
+                    <div class="timeline-item" data-reveal class="reveal-fade-left">
                         <div class="timeline-dot"></div>
-                        <div class="card hover-lift">
-                            <h4 class="text-primary mb-sm">3. UI/UX Design</h4>
-                            <p class="text-muted">Crafting beautiful, intuitive, and accessible interfaces backed by user experience research.</p>
+                        <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">3. UI/UX Design</h4>
+                            <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Crafting beautiful, intuitive, and accessible interfaces backed by user experience research.</p>
                         </div>
                     </div>
-                    <div class="timeline-item" data-animate>
+                    <div class="timeline-item" data-reveal class="reveal-fade-right">
                         <div class="timeline-dot"></div>
-                        <div class="card hover-lift">
-                            <h4 class="text-primary mb-sm">4. Agile Development</h4>
-                            <p class="text-muted">Writing clean, modular code in agile sprints, ensuring continuous delivery and tight feedback loops.</p>
+                        <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">4. Agile Development</h4>
+                            <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Writing clean, modular code in agile sprints, ensuring continuous delivery and tight feedback loops.</p>
                         </div>
                     </div>
-                    <div class="timeline-item" data-animate>
+                    <div class="timeline-item" data-reveal class="reveal-fade-left">
                         <div class="timeline-dot"></div>
-                        <div class="card hover-lift">
-                            <h4 class="text-primary mb-sm">5. Rigorous Testing</h4>
-                            <p class="text-muted">Automated and manual QA processes encompassing unit, integration, and performance testing.</p>
+                        <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">5. Rigorous Testing</h4>
+                            <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Automated and manual QA processes encompassing unit, integration, and performance testing.</p>
                         </div>
                     </div>
-                    <div class="timeline-item" data-animate>
+                    <div class="timeline-item" data-reveal class="reveal-fade-right">
                         <div class="timeline-dot"></div>
-                        <div class="card hover-lift">
-                            <h4 class="text-primary mb-sm">6. Deployment & CI/CD</h4>
-                            <p class="text-muted">Seamless rollout to production environments using advanced continuous integration pipelines.</p>
+                        <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">6. Deployment & CI/CD</h4>
+                            <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Seamless rollout to production environments using advanced continuous integration pipelines.</p>
                         </div>
                     </div>
-                    <div class="timeline-item" data-animate>
+                    <div class="timeline-item" data-reveal class="reveal-fade-left">
                         <div class="timeline-dot"></div>
-                        <div class="card hover-lift">
-                            <h4 class="text-primary mb-sm">7. Ongoing Maintenance</h4>
-                            <p class="text-muted">Proactive monitoring, security patches, and feature enhancements to ensure longevity.</p>
+                        <div class="card hover-lift" style="background: var(--clr-surface); border-radius: var(--radius-md); padding: 2rem;">
+                            <h4 class="text-primary mb-sm" style="color: var(--clr-primary); margin-bottom: 0.5rem;">7. Ongoing Maintenance</h4>
+                            <p class="text-muted" style="color: var(--clr-text-muted); font-size: 0.95rem;">Proactive monitoring, security patches, and feature enhancements to ensure longevity.</p>
                         </div>
                     </div>
                 </div>
@@ -205,29 +205,29 @@
         </section>
 
         <!-- 6. Why Businesses Trust Us -->
-        <section class="section bg-primary-dark text-white relative overflow-hidden">
-            <div class="particles-overlay"></div>
+        <section class="section bg-primary-dark text-white relative overflow-hidden" style="background-color: var(--clr-primary-dark); padding: 5rem 0;">
+            <div class="noise-overlay"></div>
             <div class="container relative z-10">
-                <div class="text-center mb-xl" data-animate>
-                    <h2 class="text-h2 text-white">Why Businesses <span class="text-accent">Trust Us</span></h2>
+                <div class="text-center mb-xl" data-reveal class="reveal-blur-in" style="text-align: center; margin-bottom: 4rem;">
+                    <h2 class="text-h2 text-white" style="font-size: 2.5rem; color: white;">Why Businesses <span class="text-accent">Trust Us</span></h2>
                 </div>
-                <div class="grid-2">
-                    <div class="card-glass hover-lift" data-animate>
-                        <h3 class="text-h3 text-white mb-sm">Enterprise-Grade Architecture</h3>
-                        <p class="text-muted-light mb-md">We don't cut corners. Our systems are built to handle millions of transactions, ensuring your business never experiences catastrophic downtime.</p>
-                        <ul class="list-none">
-                            <li class="mb-xs text-accent">✓ High Availability</li>
-                            <li class="mb-xs text-accent">✓ Microservices Ready</li>
-                            <li class="text-accent">✓ Zero-Trust Security</li>
+                <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;" data-reveal-group>
+                    <div class="card-glass hover-lift about-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
+                        <h3 class="text-h3 text-white mb-sm" style="color: white; margin-bottom: 0.75rem;">Enterprise-Grade Architecture</h3>
+                        <p class="text-muted-light mb-md" style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">We don't cut corners. Our systems are built to handle millions of transactions, ensuring your business never experiences catastrophic downtime.</p>
+                        <ul class="list-none" style="list-style: none;">
+                            <li class="mb-xs text-accent" style="margin-bottom: 0.5rem; color: var(--clr-accent);">✓ High Availability</li>
+                            <li class="mb-xs text-accent" style="margin-bottom: 0.5rem; color: var(--clr-accent);">✓ Microservices Ready</li>
+                            <li class="text-accent" style="color: var(--clr-accent);">✓ Zero-Trust Security</li>
                         </ul>
                     </div>
-                    <div class="card-glass hover-lift delay-100" data-animate>
-                        <h3 class="text-h3 text-white mb-sm">Transparent Partnership</h3>
-                        <p class="text-muted-light mb-md">We integrate directly with your team. No hidden fees, no opaque black-box development. You have full visibility into our codebase and progress.</p>
-                        <ul class="list-none">
-                            <li class="mb-xs text-accent">✓ Daily Standups</li>
-                            <li class="mb-xs text-accent">✓ Code Review Access</li>
-                            <li class="text-accent">✓ Dedicated Project Managers</li>
+                    <div class="card-glass hover-lift about-card" style="background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); padding: 2.5rem;" data-reveal class="reveal-scale-in">
+                        <h3 class="text-h3 text-white mb-sm" style="color: white; margin-bottom: 0.75rem;">Transparent Partnership</h3>
+                        <p class="text-muted-light mb-md" style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">We integrate directly with your team. No hidden fees, no opaque black-box development. You have full visibility into our codebase and progress.</p>
+                        <ul class="list-none" style="list-style: none;">
+                            <li class="mb-xs text-accent" style="margin-bottom: 0.5rem; color: var(--clr-accent);">✓ Daily Standups</li>
+                            <li class="mb-xs text-accent" style="margin-bottom: 0.5rem; color: var(--clr-accent);">✓ Code Review Access</li>
+                            <li class="text-accent" style="color: var(--clr-accent);">✓ Dedicated Project Managers</li>
                         </ul>
                     </div>
                 </div>
@@ -235,24 +235,24 @@
         </section>
 
         <!-- 7. Company Statistics -->
-        <section class="section">
+        <section class="section" style="padding: 5rem 0;">
             <div class="container">
-                <div class="grid-4 text-center">
-                    <div data-animate class="stat-container">
-                        <div class="stat-number" data-target="250">0</div>
-                        <div class="text-muted stat-label">Projects</div>
+                <div class="grid-4 text-center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; text-align: center;" data-reveal-group>
+                    <div data-reveal class="reveal-scale-in stat-container">
+                        <div class="stat-number" data-target="250" style="font-size: 3.5rem; font-weight: 700; font-family: var(--font-heading); color: var(--clr-accent); transition: text-shadow 0.3s ease;">0</div>
+                        <div class="text-muted stat-label" style="color: var(--clr-text-muted); text-transform: uppercase; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.5px;">Projects</div>
                     </div>
-                    <div data-animate class="stat-container delay-100">
-                        <div class="stat-number" data-target="100">0</div>
-                        <div class="text-muted stat-label">Happy Clients</div>
+                    <div data-reveal class="reveal-scale-in stat-container">
+                        <div class="stat-number" data-target="100" style="font-size: 3.5rem; font-weight: 700; font-family: var(--font-heading); color: var(--clr-accent); transition: text-shadow 0.3s ease;">0</div>
+                        <div class="text-muted stat-label" style="color: var(--clr-text-muted); text-transform: uppercase; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.5px;">Happy Clients</div>
                     </div>
-                    <div data-animate class="stat-container delay-200">
-                        <div class="stat-number" data-target="24">0</div>
-                        <div class="text-muted stat-label">24/7 Support</div>
+                    <div data-reveal class="reveal-scale-in stat-container">
+                        <div class="stat-number" data-target="24" style="font-size: 3.5rem; font-weight: 700; font-family: var(--font-heading); color: var(--clr-accent); transition: text-shadow 0.3s ease;">0</div>
+                        <div class="text-muted stat-label" style="color: var(--clr-text-muted); text-transform: uppercase; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.5px;">24/7 Support</div>
                     </div>
-                    <div data-animate class="stat-container delay-300">
-                        <div class="stat-number" data-target="15">0</div>
-                        <div class="text-muted stat-label">Years Experience</div>
+                    <div data-reveal class="reveal-scale-in stat-container">
+                        <div class="stat-number" data-target="15" style="font-size: 3.5rem; font-weight: 700; font-family: var(--font-heading); color: var(--clr-accent); transition: text-shadow 0.3s ease;">0</div>
+                        <div class="text-muted stat-label" style="color: var(--clr-text-muted); text-transform: uppercase; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.5px;">Years Experience</div>
                     </div>
                 </div>
             </div>
@@ -261,12 +261,13 @@
         <!-- 8. Final CTA -->
         <section class="section pt-0">
             <div class="container">
-                <div class="card-glass bg-gradient-cta text-center rounded-2xl py-cta border-none">
-                    <div class="max-w-800">
-                        <h2 class="text-h2 text-white mb-md" data-animate>Let's Build Smart Software <span class="text-accent">Together</span></h2>
-                        <div data-animate class="delay-100 flex-center flex-wrap gap-md">
-                            <a href="contact.html" class="btn btn-accent animate-pulse-glow">Request Demo</a>
-                            <a href="contact.html" class="btn btn-glass text-white border-white-20">Get Quote</a>
+                <div class="card-glass text-center" style="background: linear-gradient(135deg, var(--clr-primary-dark), var(--clr-primary)); color: white; border-radius: 2rem; padding: 5rem 2rem; border: none; box-shadow: var(--shadow-medium); position: relative; overflow: hidden;">
+                    <div class="noise-overlay"></div>
+                    <div class="max-w-800" style="margin: 0 auto; position: relative; z-index: 10;">
+                        <h2 class="text-h2 text-white mb-md" data-reveal class="reveal-rotate-in" style="color: white; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem;">Let's Build Smart Software <span class="text-accent">Together</span></h2>
+                        <div data-reveal class="reveal-scale-in" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-top: 2rem;">
+                            <a href="contact.html" class="btn btn-accent btn-shine-sweep btn-glow-accent animate-pulse-glow">Request Demo</a>
+                            <a href="contact.html" class="btn btn-glass btn-shine-sweep" style="color: white; border-color: rgba(255,255,255,0.25);">Get Quote</a>
                         </div>
                     </div>
                 </div>
@@ -274,11 +275,12 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container footer-grid">
+    <footer class="footer" style="position: relative; overflow: hidden;">
+        <div class="noise-overlay"></div>
+        <div class="container footer-grid" style="position: relative; z-index: 2;">
             <div class="footer-col">
                 <h3 class="footer-logo">TezTecch</h3>
-                <p class="footer-text">
+                <p class="footer-text" style="color: rgba(255,255,255,0.7); margin-top: 1rem; font-size: 0.95rem;">
                     Empowering businesses through cutting-edge technology and premium digital solutions.
                 </p>
             </div>
@@ -300,7 +302,7 @@
                 <p class="footer-contact">+91 123 456 7890</p>
             </div>
         </div>
-        <div class="container footer-bottom">
+        <div class="container footer-bottom" style="position: relative; z-index: 2;">
             <p class="footer-copyright">&copy; 2026 TezTecch. All Rights Reserved.</p>
         </div>
     </footer>
